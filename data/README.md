@@ -1,1 +1,2 @@
 This directory contains the optical design files of the 10 benchmarks.
+Numerical precision: When inspecting or manually transferring aspheric coefficients, use scientific notation with at least 15 significant digits (OpticStudio Preferences → Editors → Decimals = 14). For reproduction, open the supplied .ZMX files directly and preserve all stored coefficient digits; do not overwrite them with rounded values from the editor display.
