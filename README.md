@@ -1,4 +1,3 @@
-# LensDE
-Research code and optical designs for automated lens design.
-
-Multi-stage automated lens design framework via history-guided differential evolution
+# Multi-stage automated lens design framework via history-guided differential evolution
+# Overview
+This paper propose a multi-stage hybrid optimization framework for automated lens design that uses differential evolution (DE) as its core optimization algorithm and incorporates a history-guided strategy. This strategy integrates a trajectory-aware checkpoint archive and cross-run search memory to preserve promising intermediate solutions and reduce redundant exploration. For tasks permitting vignetting, an approach based on relative-illumination estimation and aperture matching to enable the joint optimization of lens parameters and field-dependent vignetting coefficients. The framework is currently able to generate coaxial refrective spheric or aspheric designs automately with high imaging quality, including those for challenging ultra-wide-angle and large-aperture systems.
