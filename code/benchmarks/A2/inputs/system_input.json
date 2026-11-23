@@ -1,0 +1,815 @@
+{
+  "name": "optiland-cpp-gui",
+  "glass_library": "CDGM",
+  "glass_libraries": [
+    "PLASTIC2026",
+    "CDGM"
+  ],
+  "bfl_reference_surface": 18,
+  "asphere_root_policy": "production",
+  "aperture": {
+    "type": "EPD",
+    "value": 3.9588
+  },
+  "max_field_deg": 36,
+  "fields": [
+    {
+      "hx": 0,
+      "hy": 0,
+      "fvcx": 0,
+      "fvcy": 0,
+      "fvdx": 0,
+      "fvdy": 0
+    },
+    {
+      "hx": 0,
+      "hy": 0.25,
+      "fvcx": 0,
+      "fvcy": 0,
+      "fvdx": 0,
+      "fvdy": 0
+    },
+    {
+      "hx": 0,
+      "hy": 0.5,
+      "fvcx": 0,
+      "fvcy": 0,
+      "fvdx": 0,
+      "fvdy": 0
+    },
+    {
+      "hx": 0,
+      "hy": 0.75,
+      "fvcx": 0,
+      "fvcy": 0,
+      "fvdx": 0,
+      "fvdy": 0
+    },
+    {
+      "hx": 0,
+      "hy": 1,
+      "fvcx": 0,
+      "fvcy": 0,
+      "fvdx": 0,
+      "fvdy": 0
+    }
+  ],
+  "wavelengths": [
+    {
+      "value_um": 0.4861,
+      "weight": 1,
+      "primary": false
+    },
+    {
+      "value_um": 0.5876,
+      "weight": 1,
+      "primary": true
+    },
+    {
+      "value_um": 0.6563,
+      "weight": 1,
+      "primary": false
+    }
+  ],
+  "ray_aiming": {
+    "mode": "calibrated_paraxial",
+    "max_iter": 20,
+    "tolerance": 1e-08,
+    "start_offset": -1,
+    "require_convergence": false,
+    "continuation_steps": 8,
+    "stop_radius_source": "real",
+    "calibrated_paraxial": {
+      "enabled": true,
+      "sampling_mode": "chief_edge_interpolation",
+      "allow_grid_upgrade": true,
+      "pilot_grid_n": 3,
+      "jacobian_probe_fraction": 0.02,
+      "min_probe_step_mm": 0.03,
+      "max_probe_step_mm": 0.3,
+      "max_condition_number": 1000.0,
+      "fit_rms_tolerance_stop_fraction": 0.03,
+      "validation_sample_count": 5,
+      "validation_residual_stop_fraction": 0.05,
+      "use_previous_field_model": true,
+      "use_previous_wave_model": true,
+      "chief_anchor_mode": "abcd_budget_angle_bridge_fast",
+      "budget_chief_iterations": 8,
+      "budget_chief_solver": "hybrid",
+      "budget_chief_acceptance": "residual",
+      "budget_chief_accept_stop_fraction": 0.05,
+      "budget_chief_residual_stop_fraction": 1e-06,
+      "budget_chief_min_a": 1e-06,
+      "budget_chief_field_continuation_angle_deg": 75.0,
+      "budget_chief_ignore_aperture_clip": true,
+      "budget_chief_skip_abcd_angle_deg": 60.0,
+      "fallback": "none",
+      "correction_iterations": 0,
+      "edge_calibration_enabled": true,
+      "edge_calibration_iterations": 8,
+      "edge_calibration_solver": "secant",
+      "edge_calibration_weight_power": 2.0,
+      "edge_calibration_residual_stop_fraction": 1e-06
+    },
+    "three_step": {
+      "enabled": true,
+      "sampling_mode": "chief_edge_interpolation",
+      "chief_reverse_trial_rays": 33,
+      "chief_reverse_max_angle_deg": 89,
+      "edge_passes": 2,
+      "meridional_iterations": 8,
+      "sagittal_iterations": 8,
+      "edge_solver": "secant",
+      "edge_residual_stop_fraction": 1e-06,
+      "edge_initial_radius_fraction": 1,
+      "accept_stop_fraction": 0.05,
+      "correction_iterations": 0,
+      "sample_stop_residual_debug": false,
+      "fallback": "adaptive_pilot_grid"
+    },
+    "adaptive_pilot_grid": {
+      "enabled": true,
+      "try_iterative_first": true,
+      "try_iterative_for_each_ray": true,
+      "iterative_failure_sample_limit": 0,
+      "require_final_convergence": true,
+      "target_field_direction_tolerance": 1e-10,
+      "use_chief_gate": true,
+      "use_primary_wave_as_anchor": true,
+      "use_previous_field_chief": true,
+      "use_previous_field_extrapolation": true,
+      "max_field_extrapolation_factor": 2,
+      "use_previous_wave_seed": true,
+      "use_previous_field_seed": true,
+      "use_previous_pupil_seed": true,
+      "use_chief_jacobian_seed": true,
+      "coarse_grid_n": 13,
+      "fine_grid_n": 5,
+      "nearest_k": 3,
+      "max_coarse_expansions": 3,
+      "max_fine_expansions": 2,
+      "coarse_min_halfwidth_fraction": 0.1,
+      "coarse_max_halfwidth_fraction": 0.6,
+      "fine_min_halfwidth_fraction": 0.03,
+      "fine_max_halfwidth_fraction": 0.25,
+      "fine_default_halfwidth_fraction": 0.06,
+      "jacobian_probe_fraction": 0.03,
+      "jacobian_safety_factor": 1.4,
+      "allow_delaunay_interpolation": false,
+      "allow_barycentric_interpolation": false,
+      "use_multistart": true,
+      "emit_diagnostics": true
+    }
+  },
+  "surfaces": [
+    {
+      "kind": "object",
+      "radius": null,
+      "conic": 0,
+      "thickness": null,
+      "semi_aperture": 0.0,
+      "mechanical_aperture": 0.0,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 4.27481756676,
+      "mechanical_aperture": 4.27481756676,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "abbe",
+        "mode": "abbe",
+        "reference": "",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 3.43248505601,
+      "mechanical_aperture": 4.27481756676,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 1.9794,
+      "mechanical_aperture": 2.82173251075,
+      "aperture_radius": 1.9794,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": {
+        "type": "RadialAperture",
+        "r_max": 1.9794,
+        "r_min": 0.0
+      },
+      "is_stop": true,
+      "reflective": false,
+      "material_after": {
+        "name": "abbe",
+        "mode": "abbe",
+        "reference": "",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 2.82173251075,
+      "mechanical_aperture": 2.82173251075,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 4.27481756676,
+      "mechanical_aperture": 5.11715007751,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "abbe",
+        "mode": "abbe",
+        "reference": "",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 5.11715007751,
+      "mechanical_aperture": 5.11715007751,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 6.57023513352,
+      "mechanical_aperture": 7.41256764427,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "abbe",
+        "mode": "abbe",
+        "reference": "",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 7.41256764427,
+      "mechanical_aperture": 7.41256764427,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 8.86565270028,
+      "mechanical_aperture": 9.70798521103,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "abbe",
+        "mode": "abbe",
+        "reference": "",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 9.70798521103,
+      "mechanical_aperture": 9.70798521103,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 11.161070267,
+      "mechanical_aperture": 12.0034027778,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "abbe",
+        "mode": "abbe",
+        "reference": "",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 12.0034027778,
+      "mechanical_aperture": 12.0034027778,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 13.4564878338,
+      "mechanical_aperture": 14.2988203445,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "abbe",
+        "mode": "abbe",
+        "reference": "",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 14.2988203445,
+      "mechanical_aperture": 14.2988203445,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 15.7519054006,
+      "mechanical_aperture": 16.5942379113,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "abbe",
+        "mode": "abbe",
+        "reference": "",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 16.5942379113,
+      "mechanical_aperture": 16.5942379113,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 18.0473229673,
+      "mechanical_aperture": 18.8896554781,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "abbe",
+        "mode": "abbe",
+        "reference": "",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 2,
+      "semi_aperture": 18.8896554781,
+      "mechanical_aperture": 18.8896554781,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 0.21,
+      "semi_aperture": 20.3427405341,
+      "mechanical_aperture": 20.4311864948,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "H-K9L",
+        "mode": "glass",
+        "reference": "CDGM",
+        "nd": 1.5168,
+        "vd": 64.198732,
+        "source_path": "D:\\PycharmProjects\\Optiland\\optiland\\optiland\\database\\data-nk\\glass/cdgm/H-K9L.yml"
+      },
+      "vignetting_aperture_excluded": true
+    },
+    {
+      "kind": "standard",
+      "radius": null,
+      "conic": 0,
+      "thickness": 0.233,
+      "semi_aperture": 20.4311864948,
+      "mechanical_aperture": 20.4311864948,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      },
+      "vignetting_aperture_excluded": true
+    },
+    {
+      "kind": "image",
+      "radius": null,
+      "conic": 0,
+      "thickness": 0,
+      "semi_aperture": 20.6004709039,
+      "mechanical_aperture": 20.6004709039,
+      "aperture_radius": 0.0,
+      "clear_aperture_fixed": false,
+      "mechanical_aperture_fixed": false,
+      "asphere_coefficients": [],
+      "aperture": null,
+      "is_stop": false,
+      "reflective": false,
+      "material_after": {
+        "name": "air",
+        "mode": "air",
+        "reference": "",
+        "nd": 1.0,
+        "vd": 0.0,
+        "source_path": ""
+      }
+    }
+  ],
+  "glass_search": {
+    "enabled": false,
+    "default_libraries": [
+      "CDGM"
+    ],
+    "max_candidates_per_surface": 64,
+    "mutation_rate": 0.35,
+    "random_rate": 0.05,
+    "pbest_inherit_rate": 0.35,
+    "neighbor_count": 12,
+    "local_search": true,
+    "surface_configs": [
+      {
+        "surface_index": 2,
+        "enabled": false,
+        "libraries": [
+          "CDGM"
+        ],
+        "max_candidates": 64
+      },
+      {
+        "surface_index": 1,
+        "enabled": true,
+        "libraries": [
+          "PLASTIC2026"
+        ],
+        "max_candidates": 64,
+        "strict_libraries": true
+      },
+      {
+        "surface_index": 7,
+        "enabled": true,
+        "libraries": [
+          "PLASTIC2026"
+        ],
+        "max_candidates": 64,
+        "strict_libraries": true
+      },
+      {
+        "surface_index": 3,
+        "enabled": true,
+        "libraries": [
+          "PLASTIC2026"
+        ],
+        "max_candidates": 64,
+        "strict_libraries": true
+      },
+      {
+        "surface_index": 5,
+        "enabled": true,
+        "libraries": [
+          "PLASTIC2026"
+        ],
+        "max_candidates": 64,
+        "strict_libraries": true
+      },
+      {
+        "surface_index": 9,
+        "enabled": true,
+        "libraries": [
+          "PLASTIC2026"
+        ],
+        "max_candidates": 64,
+        "strict_libraries": true
+      },
+      {
+        "surface_index": 11,
+        "enabled": true,
+        "libraries": [
+          "PLASTIC2026"
+        ],
+        "max_candidates": 64,
+        "strict_libraries": true
+      },
+      {
+        "surface_index": 13,
+        "enabled": true,
+        "libraries": [
+          "PLASTIC2026"
+        ],
+        "max_candidates": 64,
+        "strict_libraries": true
+      },
+      {
+        "surface_index": 15,
+        "enabled": true,
+        "libraries": [
+          "PLASTIC2026"
+        ],
+        "max_candidates": 64,
+        "strict_libraries": true
+      },
+      {
+        "surface_index": 17,
+        "enabled": true,
+        "libraries": [
+          "PLASTIC2026"
+        ],
+        "max_candidates": 64,
+        "strict_libraries": true
+      },
+      {
+        "surface_index": 19,
+        "enabled": false,
+        "libraries": [
+          "CDGM"
+        ],
+        "max_candidates": 64
+      }
+    ]
+  },
+  "post_asphere_plastic_glass_search": {
+    "enabled": true,
+    "library": "PLASTIC2026",
+    "material_surface_indices": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17
+    ],
+    "lens_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

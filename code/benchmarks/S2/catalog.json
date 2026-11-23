@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "task": "S2",
+  "status": "phase0_archival_configuration",
+  "production_launch_supported": false,
+  "formal_root_provenance": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32",
+  "baseline_record": {
+    "task": "S2",
+    "formal_root": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32",
+    "provenance_index": "D:\\PycharmProjects\\Optiland\\manuscript_revision_20261029\\s1_principal_operands_20261103\\verification.json",
+    "input_files": {
+      "system_input.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\system_input.json",
+        "bytes": 20860,
+        "sha256": "e9e31af90af6060a45ad6adca100f5695e48d4e563ab4b73b999d91d2523a63f"
+      },
+      "variables.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\variables.json",
+        "bytes": 12429,
+        "sha256": "0a3f1670de449eeb31a04099dcce1191918ee5e960ae66014479d139c2fa1316"
+      },
+      "merit.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\merit.json",
+        "bytes": 230614,
+        "sha256": "5bc461b08c1a5cf66769e26c8e9fd0c2e523565c7ff64e21add204060928c5fd"
+      }
+    },
+    "archival_metadata": {
+      "effective_repro_settings.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\effective_repro_settings.json",
+        "bytes": 893637,
+        "sha256": "99700ab7763cc5c8c5bf33aef37d2ea53a6073b99c7abc9b883f4c0ac3b228fe"
+      },
+      "repro_manifest.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\repro_manifest.json",
+        "bytes": 8763167,
+        "sha256": "1be961e15950b467090c161dfd0fd391668560fead1b152c7f0a610ec37a52de"
+      }
+    },
+    "baseline_role": "Saved inputs/reference records, not a newly completed reproduction.",
+    "options_source": {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\run_meta.json",
+      "bytes": 257859,
+      "sha256": "541283c07032c29f4d3ec0b0a392437ab87c2a32a672565b30d2f843bed59478"
+    },
+    "saved_seed_options": {
+      "spot_sampling_seed": 1,
+      "adaptive_basin_active_niche_elite_seed_count": 1,
+      "adaptive_basin_active_focus_elite_seed_count": 1,
+      "refresh_seed_pool_fraction": 0,
+      "refresh_seed_pool_perturbation": 0,
+      "seed": 20260515,
+      "hammer_seed": 0,
+      "initial_search_seed_air_thickness_cap": 25,
+      "initial_search_seed_glass_thickness_cap": 2,
+      "initial_search_adaptive_seed_thickness_caps": true,
+      "initial_search_seed_ttl_allow_short": true,
+      "initial_search_seed_ttl_max_factor": 1,
+      "initial_search_seed_material_nd_cap": 0.45,
+      "initial_search_seed_material_vd_cap": 50,
+      "initial_search_seed_pool_population_multiplier": 2,
+      "initial_search_basin_active_niche_elite_seed_count": 1,
+      "initial_search_basin_active_focus_elite_seed_count": 1,
+      "initial_search_funnel_global_micro_island_seed_scale": 0.65,
+      "initial_search_funnel_global_micro_island_family_seed_limit": 24,
+      "initial_search_funnel_global_micro_island_refresh_archive_seed_limit": 24,
+      "initial_search_funnel_global_explore_full_restart_shared_seed_pool": true,
+      "initial_search_funnel_global_explore_full_restart_seed_pool_multiplier": 1.0,
+      "initial_search_explore_develop_seed_stride": 10000,
+      "initial_search_restart_seed_topology_novelty": false,
+      "initial_search_restart_seed_topology_scan_limit": 0,
+      "initial_search_refresh_seed_pool_fraction": 0,
+      "initial_search_refresh_seed_pool_perturbation": 0,
+      "initial_search_funnel_stage_seed_trace_gate": true,
+      "initial_search_funnel_stage_seed_gate_candidate_factor": 8,
+      "initial_search_funnel_stage_seed_gate_batch_factor": 1,
+      "initial_search_funnel_stage_seed_gate_final_recheck": true,
+      "initial_search_seed_trace_strategy": "anchor_sparse_refill",
+      "initial_search_seed_cap_scout_enabled": true,
+      "initial_search_seed_cap_scout_list": "0.01,0.02,0.04",
+      "initial_search_seed_cap_scout_candidates": 6144,
+      "initial_search_checkpoint_optimizer_seed": 20261729,
+      "initial_search_checkpoint_population_seed": 2026072400,
+      "initial_search_de_dls_material_chromatic_repair_seed": 20260804,
+      "initial_search_de_dls_material_bridge_seed": 20260719,
+      "initial_search_de_dls_fixed_glass_feedback_seed": 20260704,
+      "initial_search_de_dls_fixed_glass_feedback_rng_seed": 104729,
+      "initial_search_post_asphere_seed": 20260709,
+      "initial_search_post_asphere_rng_seed": 104729,
+      "initial_search_post_asphere_sampling_seed": 1,
+      "initial_search_de_dls_fixed_glass_feedback_seed_policy": "stable_candidate_identity_v1",
+      "initial_search_seed_pool_target_count": 3150
+    },
+    "selected_saved_options": {
+      "initial_search_flow": "legacy",
+      "initial_search_front_profile": "weak",
+      "initial_search_wide_front_groups": 1,
+      "initial_search_run_profile": "custom",
+      "initial_search_post_asphere_flow": "single_mother",
+      "initial_search_post_asphere_enabled": false,
+      "initial_search_population_generation_mode": "restricted_perturbation",
+      "initial_search_seed_trace_strategy": "anchor_sparse_refill"
+    },
+    "numeric_seed_profile": null,
+    "numeric_seed_profile_status": "No dedicated spherical formal profile in current seed_profiles; derive from actual saved stage seeds.",
+    "reference_identity_row": {
+      "task": "S2",
+      "native_score_source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\final_locked_glass_dls_topologies\\tail_001_rank_0001\\score.json",
+      "native_system_source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\final_locked_glass_dls_topologies\\tail_001_rank_0001\\system.json",
+      "native_score_sha256": "0395047e9133a8f6fea53e10857c0dd984f73e8e32bda108a62624648cb75051",
+      "native_system_sha256": "c11e1c195c5f18cafc067c86877673e85820e6c851edfcdfc4ff33bc3b7b6303",
+      "published_file": "D:\\PycharmProjects\\Optiland\\publication_designs_20261030\\S2_C1.zmx",
+      "published_sha256": "9540c879af93ebafff3ea39b21a1aa5d6baf64dff20a1cd554b4966a5107ecbf",
+      "max_geometry_and_polynomial_parameter_difference": "3.552713678800501e-15",
+      "materials_and_stop_match": "True",
+      "native_field_count": "5",
+      "published_reporting_field_count": "5",
+      "note": "Native and Zemax field/pupil/aperture representations are intentionally distinguished"
+    },
+    "reference_files": {
+      "score": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\final_locked_glass_dls_topologies\\tail_001_rank_0001\\score.json",
+        "bytes": 67215,
+        "sha256": "0395047e9133a8f6fea53e10857c0dd984f73e8e32bda108a62624648cb75051",
+        "matches_previous_index": true
+      },
+      "system": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\final_locked_glass_dls_topologies\\tail_001_rank_0001\\system.json",
+        "bytes": 16354,
+        "sha256": "c11e1c195c5f18cafc067c86877673e85820e6c851edfcdfc4ff33bc3b7b6303",
+        "matches_previous_index": true
+      }
+    },
+    "saved_reference_native_mfv": 1.48455331471,
+    "saved_population_locations": [
+      "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_population.csv",
+      "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\population.csv"
+    ],
+    "coverage_for_validation": {
+      "seed_schedule": "required",
+      "population_equivalence": "required",
+      "same_condition_short_iteration_equivalence": "required",
+      "complete_end_to_end_run": "not required for acceptance per user"
+    }
+  },
+  "inputs": {
+    "system_input.json": {
+      "source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\system_input.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/system_input.json",
+        "bytes": 20860,
+        "sha256": "e9e31af90af6060a45ad6adca100f5695e48d4e563ab4b73b999d91d2523a63f",
+        "expected_sha256": "e9e31af90af6060a45ad6adca100f5695e48d4e563ab4b73b999d91d2523a63f",
+        "matches_expected": true
+      },
+      "snapshot": {
+        "path": "benchmarks/S2/inputs/system_input.json",
+        "bytes": 20860,
+        "sha256": "e9e31af90af6060a45ad6adca100f5695e48d4e563ab4b73b999d91d2523a63f"
+      },
+      "copy_method": "independent byte copy"
+    },
+    "variables.json": {
+      "source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\variables.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/variables.json",
+        "bytes": 12429,
+        "sha256": "0a3f1670de449eeb31a04099dcce1191918ee5e960ae66014479d139c2fa1316",
+        "expected_sha256": "0a3f1670de449eeb31a04099dcce1191918ee5e960ae66014479d139c2fa1316",
+        "matches_expected": true
+      },
+      "snapshot": {
+        "path": "benchmarks/S2/inputs/variables.json",
+        "bytes": 12429,
+        "sha256": "0a3f1670de449eeb31a04099dcce1191918ee5e960ae66014479d139c2fa1316"
+      },
+      "copy_method": "independent byte copy"
+    },
+    "merit.json": {
+      "source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\merit.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/merit.json",
+        "bytes": 230614,
+        "sha256": "5bc461b08c1a5cf66769e26c8e9fd0c2e523565c7ff64e21add204060928c5fd",
+        "expected_sha256": "5bc461b08c1a5cf66769e26c8e9fd0c2e523565c7ff64e21add204060928c5fd",
+        "matches_expected": true
+      },
+      "snapshot": {
+        "path": "benchmarks/S2/inputs/merit.json",
+        "bytes": 230614,
+        "sha256": "5bc461b08c1a5cf66769e26c8e9fd0c2e523565c7ff64e21add204060928c5fd"
+      },
+      "copy_method": "independent byte copy"
+    }
+  },
+  "options": {
+    "path": "benchmarks/S2/options.saved.json",
+    "bytes": 72945,
+    "sha256": "8387c3ba7402ae093763289785d37df833efb2618e930f705d5f5281ed83357d"
+  },
+  "project_snapshot": {
+    "path": "benchmarks/S2/project.saved.json",
+    "bytes": 351159,
+    "sha256": "66e99748778685e445f3d97bb2912036b2416ee864764eac7ae37576eea1e1d7"
+  },
+  "source_documents": [
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\run_meta.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/run_meta.json",
+      "bytes": 257859,
+      "sha256": "541283c07032c29f4d3ec0b0a392437ab87c2a32a672565b30d2f843bed59478"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\repro_manifest.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/repro_manifest.json",
+      "bytes": 8763167,
+      "sha256": "1be961e15950b467090c161dfd0fd391668560fead1b152c7f0a610ec37a52de"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\effective_repro_settings.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/effective_repro_settings.json",
+      "bytes": 893637,
+      "sha256": "99700ab7763cc5c8c5bf33aef37d2ea53a6073b99c7abc9b883f4c0ac3b228fe"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\funnel_global_explore_full_restart_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/funnel_global_explore_full_restart_summary.json",
+      "bytes": 3999,
+      "sha256": "24e217f4dfd61d316c154387e52b893f13897cab64a10ef1d4dae03cfd1c1894"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_material_funnel_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_material_funnel_summary.json",
+      "bytes": 32993,
+      "sha256": "42215a614ab004c73b3d0893b544d31eed78fdb356d11a43f53340a1a37047db"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_material_stages.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_material_stages.json",
+      "bytes": 3660,
+      "sha256": "7018a8c20dc9daed46aced8201952b58ad69816ef85e9d265392d934d84b2bd3"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\command.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_001_rank_0001/command.json",
+      "bytes": 2873,
+      "sha256": "94396739267fc80a82015c2664fe9f0384e13411a54f6bdf69ae6f217b7562e8"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_001_rank_0001/summary.json",
+      "bytes": 2741,
+      "sha256": "d7979099f451ee9dc0248aa4f0596eedbdc48fd0904ae226f5496c06391c6232"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\command.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_002_rank_0002/command.json",
+      "bytes": 2872,
+      "sha256": "84563a1c3617683f2563c834a5c1f87dc73ab4030e9e3951d027c344783a3082"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_002_rank_0002/summary.json",
+      "bytes": 2740,
+      "sha256": "cc344b96060c669fec50e211d416088901b6521afed8d733b569f44610a354ae"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\command.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_003_rank_0003/command.json",
+      "bytes": 2872,
+      "sha256": "1bc5479bb0d696f13fc4c0a9fae7020cf02a67c8ddf4445ec20bc6362afaa105"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_003_rank_0003/summary.json",
+      "bytes": 2757,
+      "sha256": "022b8835d38d43c1b49e5bbcde4021b5484a99ddbae9aa28343d3217a6b4713a"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\command.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_004_rank_0004/command.json",
+      "bytes": 2873,
+      "sha256": "b119b997547c88f4afb3c0000306207ef4218c305fcedc8186ecfeb787c0ae4f"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_004_rank_0004/summary.json",
+      "bytes": 2747,
+      "sha256": "f7671946a266d0ee5a7238bea49ff491807e7022721d7920dab32477ae0f6ae3"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\summaries\\layer1_checkpoint_de_config.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/summaries/layer1_checkpoint_de_config.json",
+      "bytes": 7042,
+      "sha256": "5a9ba0c39d3773eff0829eff0acd066aba879bd431ad3124dcded5c81d2678fb"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\summaries\\layer1_checkpoint_de_results.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/summaries/layer1_checkpoint_de_results.json",
+      "bytes": 54780,
+      "sha256": "3316371e79f5c76f380e36191dcf459d48906d42d67efe7c3477f0d2175002bf"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\summaries\\layer1_checkpoint_rank1_reference_manifest.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/summaries/layer1_checkpoint_rank1_reference_manifest.json",
+      "bytes": 10386,
+      "sha256": "b9d13b476d0d6853bb446635aff2cbdee325591f7b03f6cdca4159b030ee72ca"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\summaries\\layer1_checkpoint_run_manifest.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/summaries/layer1_checkpoint_run_manifest.json",
+      "bytes": 174566,
+      "sha256": "930021fdf44157c9fb29b30cba22a1acbcef080db7177c7077c6b5c2532f25b1"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\summaries\\layer2_final_locked_glass_dls_config.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/summaries/layer2_final_locked_glass_dls_config.json",
+      "bytes": 1266,
+      "sha256": "89dfc0518a578cf3d70c3256b0413a90cc52dc85234c1bcf9173eef8d90ac52a"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\summaries\\layer2_fixed_glass_feedback_config.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/summaries/layer2_fixed_glass_feedback_config.json",
+      "bytes": 2401,
+      "sha256": "59cbed3e60001ca084b3fc604e82eb4a86db3bf779a052f6b0d9808031d04fb1"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\de_dls_key_outputs\\summaries\\two_layer_funnel_config.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/de_dls_key_outputs/summaries/two_layer_funnel_config.json",
+      "bytes": 39558,
+      "sha256": "f1746ae333de1f12151e1e5abe39db2a390414ca399adc2cb46b21eb228c253b"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/adaptive_targets.json",
+      "bytes": 3683,
+      "sha256": "837b54bf353ab788d84590a319559d842f4a1c208963809ced6ed4140dbdd9df"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\anchor_acquisition_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/anchor_acquisition_summary.json",
+      "bytes": 205,
+      "sha256": "db4d0f92374b2fbe2382784d52f08f4d052e42652b4f3c711856d3d07110e69f"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\anchor_cloud_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/anchor_cloud_summary.json",
+      "bytes": 1393,
+      "sha256": "7d6a41a203819a98b5e9a4fdd9952213984a799e9762066b5c8a3ab6e505f882"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\cap_production_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/cap_production_summary.json",
+      "bytes": 1904,
+      "sha256": "80960f7ad7d98be4cb15ab2a597f8b02d791b69f228b21edf6a71e0286cc98ef"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\cap_scout_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/cap_scout_summary.json",
+      "bytes": 3964,
+      "sha256": "a37e454d31e4df274932dfed910f614a3d81dff7cb5f6a631043bb021795fa55"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\final_asphere_profile_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/final_asphere_profile_summary.json",
+      "bytes": 219,
+      "sha256": "61fd7b3cf80ee977026bc4a59608d3aa930d99d6ef9811bfd06b15fa7671ecf5"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\final_diversity_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/final_diversity_summary.json",
+      "bytes": 47934,
+      "sha256": "bb6f40d4dbca1f6c2c7c6efbb00765e70b9a0ec4ced474c2110f3890343d15aa"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\final_recheck_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/final_recheck_summary.json",
+      "bytes": 158,
+      "sha256": "f1e0c02d1f25828237bfe1ca6a9f2bbaa353a0135f811a3b0714120e4a509dfd"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\selection_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/selection_summary.json",
+      "bytes": 2701,
+      "sha256": "0bf952822e7b388d40c5ec0ca1f6e117c92075be30a392a419a700c39f060a12"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S2_11P_0917_234143_db32\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S2_11P_0917_234143_db32/hybrid_initial/seed_trace_gate_v2/sparse_refill_summary.json",
+      "bytes": 104562,
+      "sha256": "4bc3050fa7bd052c7eb585afcc43d2b619a581ec5d4a8c2e871358fc038f992c"
+    }
+  ],
+  "saved_seed_options": {
+    "spot_sampling_seed": 1,
+    "adaptive_basin_active_niche_elite_seed_count": 1,
+    "adaptive_basin_active_focus_elite_seed_count": 1,
+    "refresh_seed_pool_fraction": 0,
+    "refresh_seed_pool_perturbation": 0,
+    "seed": 20260515,
+    "hammer_seed": 0,
+    "initial_search_seed_air_thickness_cap": 25,
+    "initial_search_seed_glass_thickness_cap": 2,
+    "initial_search_adaptive_seed_thickness_caps": true,
+    "initial_search_seed_ttl_allow_short": true,
+    "initial_search_seed_ttl_max_factor": 1,
+    "initial_search_seed_material_nd_cap": 0.45,
+    "initial_search_seed_material_vd_cap": 50,
+    "initial_search_seed_pool_population_multiplier": 2,
+    "initial_search_basin_active_niche_elite_seed_count": 1,
+    "initial_search_basin_active_focus_elite_seed_count": 1,
+    "initial_search_funnel_global_micro_island_seed_scale": 0.65,
+    "initial_search_funnel_global_micro_island_family_seed_limit": 24,
+    "initial_search_funnel_global_micro_island_refresh_archive_seed_limit": 24,
+    "initial_search_funnel_global_explore_full_restart_shared_seed_pool": true,
+    "initial_search_funnel_global_explore_full_restart_seed_pool_multiplier": 1.0,
+    "initial_search_explore_develop_seed_stride": 10000,
+    "initial_search_restart_seed_topology_novelty": false,
+    "initial_search_restart_seed_topology_scan_limit": 0,
+    "initial_search_refresh_seed_pool_fraction": 0,
+    "initial_search_refresh_seed_pool_perturbation": 0,
+    "initial_search_funnel_stage_seed_trace_gate": true,
+    "initial_search_funnel_stage_seed_gate_candidate_factor": 8,
+    "initial_search_funnel_stage_seed_gate_batch_factor": 1,
+    "initial_search_funnel_stage_seed_gate_final_recheck": true,
+    "initial_search_seed_trace_strategy": "anchor_sparse_refill",
+    "initial_search_seed_cap_scout_enabled": true,
+    "initial_search_seed_cap_scout_list": "0.01,0.02,0.04",
+    "initial_search_seed_cap_scout_candidates": 6144,
+    "initial_search_checkpoint_optimizer_seed": 20261729,
+    "initial_search_checkpoint_population_seed": 2026072400,
+    "initial_search_de_dls_material_chromatic_repair_seed": 20260804,
+    "initial_search_de_dls_material_bridge_seed": 20260719,
+    "initial_search_de_dls_fixed_glass_feedback_seed": 20260704,
+    "initial_search_de_dls_fixed_glass_feedback_rng_seed": 104729,
+    "initial_search_post_asphere_seed": 20260709,
+    "initial_search_post_asphere_rng_seed": 104729,
+    "initial_search_post_asphere_sampling_seed": 1,
+    "initial_search_de_dls_fixed_glass_feedback_seed_policy": "stable_candidate_identity_v1",
+    "initial_search_seed_pool_target_count": 3150
+  },
+  "seed_profile_in_handoff": null,
+  "execution_evidence": "benchmarks/S2/execution_evidence.json",
+  "stage_graph": "benchmarks/S2/stage_graph.json",
+  "remaining_gaps": [
+    "short_iteration_equivalence_not_yet_executed",
+    "all_rng_calls_and_state_not_yet_traced",
+    "production_launcher_and_resource_relocation_pending",
+    "exact_nested_stage_graph_pending",
+    "dedicated_numeric_seed_profile_pending"
+  ],
+  "path_policy": "Saved absolute/source paths are provenance, not relocated runtime inputs; JSON fields have not been silently rewritten."
+}

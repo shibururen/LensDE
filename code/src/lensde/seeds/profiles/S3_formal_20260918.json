@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "name": "S3_formal_20260918",
+  "reference_master_seed": 20260519,
+  "reference_initial_seed": 20260519,
+  "source_archive": "S3_10P_0918_045620_b8b1",
+  "benchmark_task": "S3",
+  "option_seeds": {
+    "initial_search_checkpoint_optimizer_seed": 20261733,
+    "initial_search_checkpoint_population_seed": 2026072404,
+    "initial_search_de_dls_material_chromatic_repair_seed": 20260808,
+    "initial_search_de_dls_material_bridge_seed": 20260723,
+    "initial_search_de_dls_fixed_glass_feedback_seed": 20260708,
+    "initial_search_de_dls_fixed_glass_feedback_rng_seed": 104733,
+    "initial_search_post_asphere_seed": 20260713,
+    "initial_search_post_asphere_rng_seed": 104733,
+    "initial_search_de_dls_glass_scout_seed": 20260726,
+    "initial_search_de_dls_glass_scout_rng_seed": 104729
+  },
+  "fixed_glass_feedback": {
+    "locked_glass/adaptive_jade/4": {
+      "optimizer_seed": 1726214524,
+      "population_seed": 261277388
+    },
+    "locked_glass/adaptive_jade/2": {
+      "optimizer_seed": 335190838,
+      "population_seed": 154290202
+    },
+    "locked_glass/adaptive_jade/3": {
+      "optimizer_seed": 1105406865,
+      "population_seed": 1556709774
+    },
+    "locked_glass/adaptive_jade/1": {
+      "optimizer_seed": 1154721276,
+      "population_seed": 924020730
+    }
+  },
+  "post_asphere_stage_seeds": {},
+  "inactive_unrecorded_options": [
+    "initial_search_funnel_probe_selection_seed"
+  ],
+  "source_provenance": {
+    "saved_options_sha256": "12a12d43c705337bcbdb4371ff270f7e1cddd5a66ba0e92af60770282f4e1286",
+    "glass_scout_configuration_source": "optiland_cpp/gui/work/formal_new/S3_10P_0918_045620_b8b1/de_dls_key_outputs/summaries/layer2_material5_bridge_report.json",
+    "glass_scout_configuration_sha256": "c9a0d3f1c9921e90516794853dde3f6f711be278fa40d523f136b74b36b68b5e"
+  },
+  "scope": "Recorded spherical workflow. Polynomial stage disabled. Probe-selection branch inactive and not synthesized."
+}

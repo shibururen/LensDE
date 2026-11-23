@@ -1,0 +1,378 @@
+<!doctype html>
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LensDE Workbench</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body><div id="app" aria-busy="true">
+  <header class="topbar">
+    <div>
+      <h1>LensDE Workbench</h1>
+      <p>表面编辑、变量配置、追迹分析与优化调用</p>
+    </div>
+    <div class="top-actions"><button id="localeZh" class="secondary">中文</button><button id="localeEn" class="secondary">EN</button>
+      <button id="runTrace">运行追迹</button>
+      <button id="runOptimize">运行优化</button>
+      <button id="newProject" class="secondary">新建</button>
+    </div>
+  </header>
+
+  <main class="shell">
+    <aside class="sidebar">
+      <section>
+        <h2>文件</h2><label><span data-zh="示例工程" data-en="Example project">示例工程</span><select id="benchmarkSelect"></select></label><button id="loadBenchmark" class="secondary" data-zh="装载示例" data-en="Load example">装载示例</button><input id="projectFile" type="file" accept=".json" hidden>
+        <label>路径
+          <input id="filePath" placeholder="D:\PycharmProjects\...\project.json">
+        </label>
+        <div class="button-row">
+          <button id="loadProject" class="secondary">加载工程</button>
+          <button id="saveProject" class="secondary">保存工程</button>
+        </div>
+        <div class="button-row">
+          <button id="importOptiland" class="secondary">导入 Optiland</button>
+          <button id="exportSystem" class="secondary">导出系统</button>
+        </div>
+        <div class="button-row">
+          <button id="exportCodeV" class="secondary">导出 Code V</button>
+          <button id="exportZemax" class="secondary">导出 Zemax</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>系统</h2>
+        <label><span data-zh="名称" data-en="Name">名称</span> <input data-bind="system.name"></label>
+        <div class="grid2">
+          <label><span data-zh="孔径类型" data-en="Type">孔径类型</span> <select data-bind="system.aperture.type">
+              <option value="EPD">EPD</option>
+              <option value="imageFNO">imageFNO</option>
+              <option value="objectNA">objectNA</option>
+              <option value="float_by_stop_size">float_by_stop_size</option>
+            </select>
+          </label>
+          <label><span data-zh="孔径值" data-en="Value">孔径值</span> <input type="number" step="0.001" data-bind="system.aperture.value"></label>
+        </div>
+        <label class="check"><input type="checkbox" data-bind="options.sync_stop_aperture"><span data-zh="自动更新 STOP 实际光线包络" data-en="Sync stop aperture">自动更新 STOP 实际光线包络</span> </label>
+        <label><span data-zh="最大视场角 deg" data-en="Max field deg">最大视场角 deg</span> <input type="number" step="0.001" data-bind="system.max_field_deg"></label>
+        <div class="glass-library-summary">
+          <span data-zh="玻璃库（系统 / 优化候选）" data-en="Glass libraries (system / optimization)">玻璃库（系统 / 优化候选）</span>
+          <ul id="glassLibrarySummary" class="library-tags" aria-live="polite"></ul>
+          <p class="material-meta" data-zh="由各表面设置汇总，在表面栏修改。" data-en="Combined from surface settings; edit in Surfaces.">由各表面设置汇总，在表面栏修改。</p>
+        </div>
+      </section>
+
+      <section id="rayAimingPanel">
+        <h2>光线瞄准</h2>
+        <label><span data-zh="瞄准模式" data-en="Aiming mode">瞄准模式</span>
+          <select data-bind="options.aiming">
+            <option value="paraxial" data-zh="近轴" data-en="Paraxial">近轴</option>
+            <option value="calibrated_paraxial" data-zh="校准近轴" data-en="Calibrated paraxial">校准近轴</option>
+          </select>
+        </label>
+        <label><span data-zh="Stop 半径光线来源" data-en="Stop radius ray source">Stop 半径光线来源</span>
+          <select data-bind="options.aiming_stop_radius_source">
+            <option value="paraxial" data-zh="近轴光线" data-en="Paraxial rays">近轴光线</option>
+            <option value="real" data-zh="实际光线" data-en="Real rays">实际光线</option>
+          </select>
+        </label>
+      </section>
+
+      <section id="optimizationSamplingPanel">
+        <h2 data-zh="基础优化采样" data-en="Base optimization sampling">基础优化采样</h2>
+        <label><span data-zh="采样方式" data-en="Sampling pattern">采样方式</span>
+          <select data-bind="merit.pupil_distribution">
+            <option value="gaussian_ring_arm" data-zh="高斯环臂" data-en="Gaussian rings and arms">高斯环臂</option>
+            <option value="gaussian_ring_arm_fixed_budget" data-zh="高斯环臂（固定预算）" data-en="Gaussian rings and arms (fixed budget)">高斯环臂（固定预算）</option>
+          </select>
+        </label>
+        <div class="grid2">
+          <label><span data-zh="径向环数" data-en="Radial rings">径向环数</span><input type="number" min="1" step="1" data-bind="merit.num_rays"></label>
+          <label><span data-zh="方位臂数" data-en="Pupil arms">方位臂数</span><input type="number" min="1" step="1" data-bind="merit.pupil_arms"></label>
+        </div>
+        <button id="editWorkflowSampling" class="secondary" data-zh="分阶段优化采样…" data-en="Stage sampling…">分阶段优化采样…</button>
+      </section>
+
+      <section id="optimizationPanel">
+        <h2>优化</h2>
+        <label><span data-zh="运行模式" data-en="Optimization mode">运行模式</span>
+          <select id="optimizationScope"><option value="ordinary" data-zh="常规优化" data-en="Ordinary optimization">常规优化</option><option value="initial" data-zh="初始结构搜索" data-en="Initial structure search">初始结构搜索</option></select>
+        </label>
+        <label data-ordinary-only><span data-zh="优化算法" data-en="Algorithm">优化算法</span> <select id="ordinaryOptimizer"><option value="de">DE</option><option value="local">DLS</option></select>
+        </label>
+        <div class="mode-panel" data-optimizer-panel data-modes="de">
+          <h3>DE</h3>
+          <label><span data-zh="DE 策略" data-en="DE strategy">DE 策略</span>
+            <select id="ordinaryDeStrategy">
+              <option value="jade" data-zh="JADE（自适应 F/CR + 外部档案）" data-en="JADE (adaptive F/CR + archive)">JADE（自适应 F/CR + 外部档案）</option>
+              <option value="best1bin">DE/best/1/bin</option>
+              <option value="currenttobest1bin">DE/current-to-best/1/bin</option>
+              <option value="rand1bin">DE/rand/1/bin</option>
+            </select>
+          </label>
+          <div class="grid2">
+            <label><span data-zh="种群倍数 × D" data-en="Population multiplier × D">种群倍数 × D</span> <input type="number" step="1" min="1" data-bind="options.population"></label>
+            <label><span data-zh="代数上限" data-en="Generation limit">代数上限</span> <input type="number" step="1" min="1" data-bind="options.generations"></label>
+          </div>
+          <p id="ordinaryPopulationSummary" class="material-meta"></p>
+          <label><span data-zh="种群初始化" data-en="Population initialization">种群初始化</span>
+            <select id="ordinaryDeInitialization">
+              <option value="bounds" data-zh="变量边界采样（LHS）" data-en="Variable-bound sampling (LHS)">变量边界采样（LHS）</option>
+              <option value="local" data-zh="当前结构附近（局部扰动）" data-en="Local variants of current prescription">当前结构附近（局部扰动）</option>
+            </select>
+          </label>
+          <label data-de-local><span data-zh="局部扰动范围" data-en="Local perturbation range">局部扰动范围</span>
+            <select id="ordinaryDeScale">
+              <option value="tight" data-zh="小" data-en="Small">小</option>
+              <option value="medium" data-zh="中" data-en="Medium">中</option>
+              <option value="wide" data-zh="大" data-en="Large">大</option>
+            </select>
+          </label>
+          <p id="ordinaryInitializationHint" class="material-meta"></p>
+          <label><span data-zh="随机种子" data-en="Seed">随机种子</span> <input type="number" step="1" data-bind="options.seed"></label>
+          <p data-jade-de class="material-meta" data-zh="F/CR 随成功试探自适应；p=0.1，档案容量为种群大小。" data-en="F/CR adapt from successful trials; p=0.1 and archive capacity equals population size.">F/CR 随成功试探自适应；p=0.1，档案容量为种群大小。</p>
+          <div class="grid2" data-classic-de>
+            <label><span data-zh="F min" data-en="Mutation min">F min</span> <input type="number" step="0.01" data-bind="options.mutation_min"></label>
+            <label><span data-zh="F max" data-en="Mutation max">F max</span> <input type="number" step="0.01" data-bind="options.mutation_max"></label>
+          </div>
+          <label data-classic-de><span data-zh="交叉率 CR" data-en="Crossover probability CR">交叉率 CR</span> <input type="number" step="0.01" data-bind="options.recombination"></label>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+        
+        
+        
+        <div class="mode-panel search-panel" data-paper-workflow="true">
+          <h3 data-zh="搜索分配" data-en="Search allocation">搜索分配</h3>
+          <output id="searchAllocationSummary" class="allocation-summary" aria-live="polite"></output>
+          <div class="grid2 allocation-grid">
+            <label><span data-zh="Nₒ · 全局搜索次数" data-en="Nₒ · Global trajectories">Nₒ · 全局搜索次数</span><input type="number" min="1" step="1" data-search-allocation="No" data-bind="options.initial_search_funnel_global_explore_outer"></label>
+            <label><span data-zh="Kc · 续优化候选上限" data-en="Kc · Continuation capacity">Kc · 续优化候选上限</span><input type="number" min="1" step="1" data-search-allocation="Kc" data-bind="options.initial_search_checkpoint_total_count"></label>
+            <label><span data-zh="Kh · 几何精化候选上限" data-en="Kh · Geometric refinement capacity">Kh · 几何精化候选上限</span><input type="number" min="1" step="1" data-search-allocation="Kh" data-bind="options.initial_search_checkpoint_handoff_count"></label>
+            <label><span data-zh="Km · 材料替换候选上限" data-en="Km · Material substitution capacity">Km · 材料替换候选上限</span><input type="number" min="1" step="1" data-search-allocation="Km" data-bind="options.initial_search_de_dls_material_entry_count"></label>
+          </div>
+          <p class="material-meta" data-zh="Kc 包含各次搜索的终态优胜者。候选数是上限，实际入选数受有效性与结构去重筛选影响。" data-en="Kc includes terminal winners. Candidate counts are capacities; validity and structural screening may reduce actual admissions.">Kc 包含各次搜索的终态优胜者。候选数是上限，实际入选数受有效性与结构去重筛选影响。</p>
+          <p id="searchAllocationError" class="allocation-error" role="alert" hidden></p>
+
+          <h3 data-zh="全局搜索预算" data-en="Global search budget">全局搜索预算</h3>
+          <div class="grid2">
+            <label><span data-zh="种群倍数 × Dₛ" data-en="Population multiplier × Dₛ">种群倍数 × Dₛ</span><input type="number" min="4" step="1" data-search-count="4" data-bind="options.initial_search_funnel_global_popsize"></label>
+            <label><span data-zh="每次代数上限" data-en="Generations per trajectory">每次代数上限</span><input type="number" min="1" step="1" data-search-count="1" data-bind="options.initial_search_funnel_global_explore_de_gen"></label>
+          </div>
+          <label><span data-zh="主随机种子" data-en="Master random seed">主随机种子</span><input type="number" min="1" step="1" data-search-count="1" data-bind="options.seed"></label>
+          <p class="material-meta" data-zh="Dₛ 为不含光瞳变量的阶段维数；各阶段随机种子由主种子与工程配置派生。" data-en="Dₛ excludes pupil coordinates; stage seeds derive from the master seed and saved project settings.">Dₛ 为不含光瞳变量的阶段维数；各阶段随机种子由主种子与工程配置派生。</p>
+
+          <h3 data-zh="初始化" data-en="Initialization">初始化</h3>
+          <label><span data-zh="BFL 参考面（S#）" data-en="BFL reference surface (S#)">BFL 参考面（S#）</span><select id="searchBflReference"></select></label>
+          <p id="searchBflSummary" class="material-meta"></p>
+          <label><span data-zh="结构先验" data-en="Structural prior">结构先验</span><select data-bind="options.initial_search_flow"><option value="legacy" data-zh="通用" data-en="General">通用</option><option value="wide_angle" data-zh="广角前组先验" data-en="Wide-angle front group">广角前组先验</option></select></label>
+          <label data-search-wide-only><span data-zh="前组先验强度" data-en="Front-group prior strength">前组先验强度</span><select data-bind="options.initial_search_front_profile"><option value="weak" data-zh="弱" data-en="Weak">弱</option><option value="medium" data-zh="中" data-en="Medium">中</option><option value="strong" data-zh="强" data-en="Strong">强</option><option value="xstrong" data-zh="更强" data-en="Stronger">更强</option></select></label>
+          <label><span data-zh="初始表面形式" data-en="Initial surface model">初始表面形式</span><select id="initialShapeMode"><option value="spherical" data-zh="球面" data-en="Spherical">球面</option><option value="conic" data-zh="球面 + 圆锥系数" data-en="Spherical + conic">球面 + 圆锥系数</option></select></label>
+          <p id="searchThicknessHelp" class="material-meta" data-zh="厚度自适应根据 TTL/BFL/EFL、制造约束和系统结构计算采样范围。完整评价函数模式的制造厚度边界在“优化函数”中设置。" data-en="Adaptive thickness initialization derives sampling ranges from TTL/BFL/EFL, manufacturing limits and system structure. In full-merit mode, set manufacturing thickness limits in Merit.">厚度自适应根据 TTL/BFL/EFL、制造约束和系统结构计算采样范围。完整评价函数模式的制造厚度边界在“优化函数”中设置。</p>
+          <details class="search-scope-settings"><summary data-zh="种群初始化范围" data-en="Population initialization ranges">种群初始化范围</summary>
+            <label><span data-zh="初始化曲率上限 |c|（mm⁻¹）" data-en="Initialization curvature cap |c| (mm⁻¹)">初始化曲率上限 |c|（mm⁻¹）</span><input type="number" step="0.001" min="0" data-bind="options.initial_search_curvature_bound"></label>
+            <label><span data-zh="曲率探测上限序列" data-en="Curvature-cap probe sequence">曲率探测上限序列</span><input type="text" data-bind="options.initial_search_seed_cap_scout_list"></label>
+            <label><span data-zh="初始化 TTL 上限 × 目标" data-en="Seed TTL limit × target">初始化 TTL 上限 × 目标</span><input type="number" step="0.01" min="1" data-bind="options.initial_search_ttl_budget_trace_upper_factor"></label>
+            <p class="material-meta" data-zh="锚点高斯扩展与稀疏回填按候选数量、多样性条件自动触发。" data-en="Anchor Gaussian expansion and sparse refill trigger according to pool size and diversity.">锚点高斯扩展与稀疏回填按候选数量、多样性条件自动触发。</p>
+          </details>
+
+          <h3 data-zh="连续材料约束" data-en="Continuous-material constraints">连续材料约束</h3>
+          <label><span data-zh="材料评价方案" data-en="Material constraint scheme">材料评价方案</span><select id="searchMaterialScheme"><option value="points" data-zh="目录点云邻近" data-en="Catalog-point proximity">目录点云邻近</option><option value="envelope" data-zh="连通包络 + 弱点云邻近" data-en="Connected envelope + weak point proximity">连通包络 + 弱点云邻近</option></select></label>
+          <p id="searchMaterialSummary" class="material-meta"></p>
+          <p class="material-meta" data-zh="点集来自各表面的优化搜索库；选库本身不自动切换评价方案。" data-en="Points come from each surface's search libraries; selecting libraries does not change this scheme.">点集来自各表面的优化搜索库；选库本身不自动切换评价方案。</p>
+
+          <h3 data-zh="后置非球面精化" data-en="Polynomial-aspheric refinement">后置非球面精化</h3>
+          <label class="check"><input type="checkbox" data-bind="options.initial_search_post_asphere_enabled"><span data-zh="启用多项式非球面精化" data-en="Enable polynomial-aspheric refinement">启用多项式非球面精化</span></label>
+          <div data-search-asphere-settings>
+            <label><span data-zh="非球面镜组（从 1 起）" data-en="Aspheric groups (1-based)">非球面镜组（从 1 起）</span><input type="text" placeholder="1,2,3" data-bind="options.initial_search_post_asphere_lens_indices"></label>
+            <label><span data-zh="最高阶次" data-en="Maximum polynomial order">最高阶次</span><select data-bind="options.initial_search_post_asphere_max_order"><option value="4">A4</option><option value="6">A6</option><option value="8">A8</option><option value="10">A10</option><option value="12">A12</option><option value="14">A14</option><option value="16">A16</option></select></label>
+            <label class="check"><input type="checkbox" data-bind="options.initial_search_post_asphere_plastic_enabled"><span data-zh="非球面镜组限塑料材料" data-en="Restrict aspheric groups to plastic">非球面镜组限塑料材料</span></label>
+            <p id="searchFieldContractSummary" class="material-meta"></p>
+            <details class="search-scope-settings"><summary data-zh="周期刷新" data-en="Periodic refresh">周期刷新</summary>
+              <label><span data-zh="刷新面形扰动幅度（μm）" data-en="Refresh sag amplitude (μm)">刷新面形扰动幅度（μm）</span><input type="number" min="0" step="0.1" data-bind="options.initial_search_post_asphere_periodic_refresh_sag_um"></label>
+              <label><span data-zh="刷新父代来源数" data-en="Refresh parent pool size">刷新父代来源数</span><input type="number" min="1" step="1" data-search-count="1" data-bind="options.initial_search_post_asphere_periodic_refresh_parent_count"></label>
+              <p id="refreshParentHelp" class="material-meta" data-zh="从保留的较优一半中随机、不重复地选取父代来源；其子代替换较差的一半。" data-en="Distinct parents are sampled at random from the retained better half. Their perturbed children replace the worse half.">从保留的较优一半中随机、不重复地选取父代来源；其子代替换较差的一半。</p>
+            </details>
+          </div>
+        </div>
+        <div class="mode-panel" data-optimizer-panel data-modes="local">
+          <h3>DLS</h3>
+          <div class="grid2">
+            <label><span data-zh="DLS 迭代" data-en="Local iterations">DLS 迭代</span> <input type="number" step="1" data-bind="options.local_iterations"></label>
+            <label><span data-zh="DLS拒绝上限" data-en="Local max reject">DLS拒绝上限</span> <input type="number" step="1" data-bind="options.local_max_reject"></label>
+          </div>
+          <label><span data-zh="DLS模式" data-en="Local method">DLS模式</span> <select data-bind="options.local_method">
+              <option value="trf" data-zh="残差DLS" data-en="trf">残差DLS</option>
+              <option value="batch_merit">batch merit DLS</option>
+              <option value="cuda-dls">CUDA batch merit polish</option>
+            </select>
+          </label>
+          <label><span data-zh="DLS边界" data-en="Local bounds mode">DLS边界</span> <select data-bind="options.local_bounds_mode">
+              <option value="safety">safety</option>
+              <option value="variable">variable</option>
+            </select>
+          </label>
+          <label><span data-zh="残差构成" data-en="Local residual mode">残差构成</span> <select data-bind="options.local_residual_mode">
+              <option value="grouped">grouped</option>
+              <option value="expanded">expanded</option>
+            </select>
+          </label>
+          <div class="grid2">
+            <label><span data-zh="lambda" data-en="Local lambda">lambda</span> <input type="number" step="0.001" data-bind="options.local_lambda"></label>
+            <label><span data-zh="LS tol" data-en="Local tol">LS tol</span> <input type="number" step="0.0001" data-bind="options.local_tol"></label>
+          </div>
+          <div class="grid2">
+            <label><span data-zh="差分步长" data-en="Local fd">差分步长</span> <input type="number" step="0.00001" data-bind="options.local_fd"></label>
+            <label><span data-zh="最小步长" data-en="Local min step">最小步长</span> <input type="number" step="0.00000001" data-bind="options.local_min_step"></label>
+          </div>
+          
+          
+          
+          
+        </div>
+        
+      </section>
+    </aside>
+
+    <section class="workspace">
+      <nav class="tabs">
+        <button class="tab active" data-tab="surfaces">表面</button>
+        <button class="tab" data-tab="variables">变量</button>
+        <button class="tab" data-tab="fields">视场/波长</button>
+        <button class="tab" data-tab="merit">优化函数</button>
+        <button class="tab" data-tab="layout">分析/输出</button>
+      </nav>
+
+      <div id="surfaces" class="panel active">
+        <div class="panel-head">
+          <h2>表面定义</h2>
+          <div class="button-row">
+            <button id="addSurface">添加表面</button>
+            <button id="duplicateSurface" class="secondary">复制当前</button>
+            <button id="deleteSurface" class="danger">删除当前</button>
+            
+            
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="surfaceTable"></table>
+        </div>
+      </div>
+
+      <div id="variables" class="panel">
+        <div class="panel-head">
+          <h2>变量配置</h2>
+          <div class="button-row">
+            <button id="addVariable">添加变量</button>
+            <button id="deleteVariable" class="danger">删除变量</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="variableTable"></table>
+        </div>
+      </div>
+
+      <div id="fields" class="panel">
+        <div class="split">
+          <section>
+            <div class="panel-head">
+              <h2>视场</h2>
+              <div class="button-row">
+                <button id="setVignetting" title="使用主波长和 adaptive_pilot_grid 实际光线瞄准，根据固定通光孔径自动计算渐晕系数">设置渐晕</button>
+                <button id="clearVignetting" class="secondary" title="将全部视场的 FVCX、FVCY、FVDX、FVDY 清零">移除渐晕</button>
+                <button id="addField">添加视场</button>
+                <button id="deleteField" class="danger">删除视场</button>
+              </div>
+            </div>
+            <div class="table-wrap small"><table id="fieldTable"></table></div>
+            
+          </section>
+          <section>
+            <div class="panel-head">
+              <h2>波长</h2>
+              <button id="addWave">添加波长</button>
+            </div>
+            <div class="table-wrap small"><table id="waveTable"></table></div>
+          </section>
+        </div>
+      </div>
+
+      <div id="merit" class="panel">
+        <div class="panel-head">
+          <h2>优化函数</h2>
+        </div>
+        <div id="meritGrid" class="form-grid"></div>
+      </div>
+
+      <div id="layout" class="panel">
+        <div class="layout-grid">
+          <section class="viewer">
+            <div class="panel-head">
+              <h2>2D Layout</h2>
+              <div class="button-row">
+                <a id="downloadLayout" class="link-button" target="_blank">打开 SVG</a>
+                <a id="downloadRaytrace" class="link-button" target="_blank">Raytrace CSV</a>
+                <a id="downloadSpot" class="link-button" target="_blank">Spot CSV</a>
+                
+              </div>
+            </div>
+            <object id="layoutObject" type="image/svg+xml"></object>
+            <div class="spot-section">
+              <div class="panel-head">
+                <h2 data-zh="点列图" data-en="Spot diagram">点列图</h2>
+                <span id="spotSummary" class="muted" aria-live="polite">运行追迹后显示</span>
+              </div>
+              <details id="spotDisplaySettings" class="spot-settings">
+                <summary data-zh="点列图设置" data-en="Spot diagram settings">点列图设置</summary>
+                <p class="muted" data-zh="显示比例即时生效。修改点列采样后需重新追迹，优化采样不受影响。" data-en="Scale changes apply immediately. Run a new trace to apply spot sampling changes. Optimization sampling is independent.">显示比例即时生效。修改点列采样后需重新追迹，优化采样不受影响。</p>
+                <div class="grid3">
+                  <label><span data-zh="点列采样方式" data-en="Spot sampling pattern">点列采样方式</span>
+                    <select data-bind="options.spot_distribution">
+                      <option value="uniform" data-zh="均匀网格" data-en="Uniform grid">均匀网格</option>
+                      <option value="hexapolar" data-zh="六角极坐标" data-en="Hexapolar">六角极坐标</option>
+                    </select>
+                  </label>
+                  <label><span data-zh="采样密度" data-en="Sampling density">采样密度</span><input type="number" min="1" step="1" data-bind="options.spot_rays"></label>
+                  <label><span data-zh="方位臂数" data-en="Pupil arms">方位臂数</span><input type="number" min="1" step="1" data-bind="options.spot_arms"></label>
+                  <label><span data-zh="显示比例" data-en="Display scale">显示比例</span>
+                    <select id="spotScale" disabled>
+                      <option value="shared" data-zh="全视场统一" data-en="Shared across fields">全视场统一</option>
+                      <option value="fit" data-zh="单视场自适应" data-en="Fit each field">单视场自适应</option>
+                    </select>
+                  </label>
+                </div>
+              </details>
+              <div id="spotLegend" class="spot-legend"></div>
+              <div id="spotGrid" class="spot-grid"></div>
+            </div>
+          </section>
+          <section class="results">
+            <h2>评分</h2>
+            <pre id="scoreBox"></pre>
+            <h2>日志</h2>
+            <div class="button-row"><button id="stopJob" class="danger" data-zh="停止" data-en="Stop">停止</button><button id="resumeJob" class="secondary" data-zh="继续运行" data-en="Resume">继续运行</button><button id="refreshJob" class="secondary" data-zh="刷新" data-en="Refresh">刷新</button></div><label><span data-zh="任务 ID" data-en="Job ID">任务 ID</span><input id="jobId"></label><p id="jobStatus"></p><pre id="logBox"></pre>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main><div id="notice" role="status" hidden></div><dialog id="editDialog"><form id="editForm"><h2 id="editTitle"></h2><div id="editFields" class="form-grid"></div><div class="button-row"><button type="submit" data-zh="应用" data-en="Apply">应用</button><button type="button" id="cancelEdit" class="secondary" data-zh="取消" data-en="Cancel">取消</button></div></form></dialog>
+  <dialog id="workflowSamplingDialog" class="sampling-settings">
+    <h2 data-zh="分阶段优化采样" data-en="Stage optimization sampling">分阶段优化采样</h2>
+    <label><span data-zh="采样方案" data-en="Sampling plan">采样方案</span><select id="samplingPlanPreset"></select></label>
+    <div class="table-wrap"><table id="samplingStageTable"></table></div>
+    <p class="material-meta" data-zh="普通优化、全局与 Checkpoint 使用基础采样；Bridge、材料适配与 Scout 共用采样。" data-en="Ordinary optimization, Global and Checkpoint use base sampling; Bridge, material accommodation and Scout share sampling.">普通优化、全局与 Checkpoint 使用基础采样；Bridge、材料适配与 Scout 共用采样。</p>
+    <button id="closeWorkflowSampling" class="secondary" data-zh="关闭" data-en="Close">关闭</button>
+  </dialog>
+
+  
+</div><script type="module" src="/app.js"></script></body>
+</html>

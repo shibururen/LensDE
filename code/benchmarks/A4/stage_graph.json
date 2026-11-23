@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "kind": "declared_stage_contract",
+  "nodes": [
+    {
+      "id": "population_preparation",
+      "role": "near-planar inputs, trace gate, pool and expansion",
+      "enabled": "audit_saved_branch_options",
+      "evidence_basis": "HANDOFF_zh section III/A; not a synthesized executable workflow"
+    },
+    {
+      "id": "global_searches",
+      "role": "repeated DE; checkpoint archive and cross-run memory",
+      "enabled": "audit_saved_branch_options",
+      "evidence_basis": "HANDOFF_zh section III/A; not a synthesized executable workflow"
+    },
+    {
+      "id": "checkpoint_continuation",
+      "role": "checkpoint selection, population preparation and DE continuation",
+      "enabled": "audit_saved_branch_options",
+      "evidence_basis": "HANDOFF_zh section III/A; not a synthesized executable workflow"
+    },
+    {
+      "id": "structural_admission",
+      "role": "discrete and continuous geometry screening",
+      "enabled": "audit_saved_branch_options",
+      "evidence_basis": "HANDOFF_zh section III/A; not a synthesized executable workflow"
+    },
+    {
+      "id": "pre_material_refinement",
+      "role": "continuous-material refinement and accommodation",
+      "enabled": "audit_saved_branch_options",
+      "evidence_basis": "HANDOFF_zh section III/A; not a synthesized executable workflow"
+    },
+    {
+      "id": "material_substitution",
+      "role": "assignment/repair, geometry compensation and material Scout",
+      "enabled": "audit_saved_branch_options",
+      "evidence_basis": "HANDOFF_zh section III/A; not a synthesized executable workflow"
+    },
+    {
+      "id": "fixed_material_de",
+      "role": "fixed-material DE feedback",
+      "enabled": "audit_saved_branch_options",
+      "evidence_basis": "HANDOFF_zh section III/A; not a synthesized executable workflow"
+    },
+    {
+      "id": "final_dls",
+      "role": "fixed-material DLS and serialized-prescription validation",
+      "enabled": "audit_saved_branch_options",
+      "evidence_basis": "HANDOFF_zh section III/A; not a synthesized executable workflow"
+    },
+    {
+      "id": "polynomial_refinement",
+      "role": "Scouts, Formation, Periodic and configured refresh",
+      "enabled": true,
+      "evidence_basis": "HANDOFF_zh section III/A; not a synthesized executable workflow"
+    }
+  ],
+  "declared_edges": [
+    [
+      "population_preparation",
+      "global_searches"
+    ],
+    [
+      "global_searches",
+      "checkpoint_continuation"
+    ],
+    [
+      "checkpoint_continuation",
+      "structural_admission"
+    ],
+    [
+      "structural_admission",
+      "pre_material_refinement"
+    ],
+    [
+      "pre_material_refinement",
+      "material_substitution"
+    ],
+    [
+      "material_substitution",
+      "fixed_material_de"
+    ],
+    [
+      "fixed_material_de",
+      "final_dls"
+    ],
+    [
+      "final_dls",
+      "polynomial_refinement"
+    ]
+  ],
+  "exact_nested_graph_and_restart_order_audited": false,
+  "observed_execution_names": [
+    "funnel_global_explore",
+    "funnel_global_explore_outer_01",
+    "funnel_global_explore_outer_02",
+    "funnel_global_explore_outer_03",
+    "funnel_global_explore_outer_04",
+    "funnel_global_explore_outer_05",
+    "cap_scout_0.01",
+    "cap_scout_0.02",
+    "cap_scout_0.04",
+    "cap_production_00",
+    "anchor_cloud",
+    "sparse_refill_000_ind_sparse_micro_p035",
+    "funnel_global_explore_outer_01_vignetting_loose",
+    "funnel_global_explore_outer_01_vignetting_strict",
+    "funnel_global_explore_outer_02_vignetting_loose",
+    "funnel_global_explore_outer_02_vignetting_strict",
+    "funnel_global_explore_outer_03_vignetting_loose",
+    "funnel_global_explore_outer_03_vignetting_strict",
+    "funnel_global_explore_outer_04_vignetting_loose",
+    "funnel_global_explore_outer_04_vignetting_strict",
+    "funnel_global_explore_outer_05_vignetting_loose",
+    "funnel_global_explore_outer_05_vignetting_strict",
+    "de_dls_material_funnel",
+    "final_vignetting_audit"
+  ],
+  "warning": "Conceptual edges do not claim that archived command order is process execution order."
+}

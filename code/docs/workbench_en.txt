@@ -1,0 +1,55 @@
+LensDE Workbench
+
+Use the Workbench to configure optical systems by hand and run ray-tracing
+and optimization experiments in a browser. You can edit the lens surfaces,
+optimization variables, fields, wavelengths, and merit function.
+
+Before running your own experiments
+
+- To work around known issues with how LensDE handles back working
+  distance (BFL), we recommend following the S1–S4 benchmark setups,
+  adding an auxiliary surface behind the last powered lens element, and
+  setting the BFL reference surface and lower limit explicitly. In S1,
+  S22 is the auxiliary surface, and BFL is measured from S21 to the
+  image plane.
+
+- We recommend checking available disk space before starting an initial
+  structure search. The search writes many intermediate files under
+  code/w/, and some remain after it finishes. Step 5 shows how to locate
+  the folder for a specific run.
+
+Rerun a LensDE benchmark in the Workbench
+
+1. Follow code/README.md to install LensDE, build all three native
+   executables, and prepare the benchmark material database.
+
+2. From code/, start the Workbench in PowerShell.
+
+     & .\.venv\Scripts\python.exe -m lensde serve --port 8767
+
+3. Open http://127.0.0.1:8767/ in your browser and select EN. Under Files,
+   choose S1 in Example project and click Load example. To run a different
+   benchmark, choose its task ID instead.
+
+4. Keep the loaded settings. Under Optimization, confirm that
+   Optimization mode is Initial structure search. Click
+   Run optimization · Initial search in the toolbar.
+
+5. Open Analysis / output to monitor the job. When its status shows
+   completed, review the score and run log. Use the displayed Job ID
+   to find code/work/jobs/<job-id>/job.json. Its run_directory field
+   gives the path to the output folder under code/w/, relative to code/.
+
+Before repeating a benchmark, click Load example again to restore its
+saved starting configuration.
+
+
+Experiment notes
+
+Each trace or optimization saves results and logs to disk. These files
+accumulate across runs.
+
+The Workbench exposes a subset of LensDE's features, and bugs may remain.
+You can also run experiments through the CLI. An AI coding assistant can
+help prepare commands or project inputs. See code/README.md for the CLI
+benchmark command.

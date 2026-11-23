@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "name": "9A3_formal_20260929",
+  "reference_master_seed": 20260520,
+  "reference_initial_seed": 20260520,
+  "source_archive": "9ap_task3_auto_margin_20260929",
+  "option_seeds": {
+    "initial_search_funnel_probe_selection_seed": 20260520,
+    "initial_search_checkpoint_optimizer_seed": 20261729,
+    "initial_search_checkpoint_population_seed": 2026072400,
+    "initial_search_de_dls_material_chromatic_repair_seed": 20260804,
+    "initial_search_de_dls_material_bridge_seed": 20260719,
+    "initial_search_de_dls_glass_scout_seed": 20260726,
+    "initial_search_de_dls_glass_scout_rng_seed": 104729,
+    "initial_search_de_dls_fixed_glass_feedback_seed": 20260704,
+    "initial_search_de_dls_fixed_glass_feedback_rng_seed": 104729,
+    "initial_search_post_asphere_seed": 20260709,
+    "initial_search_post_asphere_rng_seed": 104729
+  },
+  "fixed_glass_feedback": {
+    "locked_glass/adaptive_jade/3": {
+      "optimizer_seed": 280976383,
+      "population_seed": 18821828
+    },
+    "locked_glass/adaptive_jade/2": {
+      "optimizer_seed": 961530772,
+      "population_seed": 513901155
+    },
+    "locked_glass/adaptive_jade/1": {
+      "optimizer_seed": 673220374,
+      "population_seed": 1882675879
+    },
+    "locked_glass/adaptive_jade/4": {
+      "optimizer_seed": 56925535,
+      "population_seed": 1378615729
+    }
+  },
+  "post_asphere_stage_seeds": {
+    "scout_optimizer:1009:1": 20263219,
+    "scout_population:1009:1": 106839,
+    "scout_optimizer:1009:2": 20264219,
+    "scout_population:1009:2": 107839,
+    "scout_optimizer:1009:3": 20265219,
+    "scout_population:1009:3": 108839,
+    "scout_optimizer:1009:4": 20266219,
+    "scout_population:1009:4": 109839,
+    "scout_optimizer:1009:5": 20267219,
+    "scout_population:1009:5": 110839,
+    "formation_optimizer:1009:1": 21263222,
+    "formation_population:1009:1": 106839,
+    "periodic_optimizer:1009:2": 20291720,
+    "periodic_population:1009:2": 157756
+  }
+}

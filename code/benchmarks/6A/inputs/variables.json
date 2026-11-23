@@ -1,0 +1,445 @@
+{
+  "variables": [
+    {
+      "kind": "curvature",
+      "index": 2,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S2"
+    },
+    {
+      "kind": "thickness",
+      "index": 2,
+      "term": 0,
+      "lower": 0.3,
+      "upper": 10.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S2"
+    },
+    {
+      "kind": "curvature",
+      "index": 3,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S3"
+    },
+    {
+      "kind": "thickness",
+      "index": 3,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.2870000000000001,
+      "role": "hybrid-initial thickness @ S3"
+    },
+    {
+      "kind": "curvature",
+      "index": 4,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S4"
+    },
+    {
+      "kind": "thickness",
+      "index": 4,
+      "term": 0,
+      "lower": 0.3,
+      "upper": 10.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S4"
+    },
+    {
+      "kind": "curvature",
+      "index": 5,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S5"
+    },
+    {
+      "kind": "thickness",
+      "index": 5,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.2870000000000001,
+      "role": "hybrid-initial thickness @ S5"
+    },
+    {
+      "kind": "curvature",
+      "index": 6,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S6"
+    },
+    {
+      "kind": "thickness",
+      "index": 6,
+      "term": 0,
+      "lower": 0.3,
+      "upper": 10.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S6"
+    },
+    {
+      "kind": "curvature",
+      "index": 7,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S7"
+    },
+    {
+      "kind": "thickness",
+      "index": 7,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.2870000000000001,
+      "role": "hybrid-initial thickness @ S7"
+    },
+    {
+      "kind": "curvature",
+      "index": 8,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S8"
+    },
+    {
+      "kind": "thickness",
+      "index": 8,
+      "term": 0,
+      "lower": 0.3,
+      "upper": 10.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S8"
+    },
+    {
+      "kind": "curvature",
+      "index": 9,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S9"
+    },
+    {
+      "kind": "thickness",
+      "index": 9,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.2870000000000001,
+      "role": "hybrid-initial thickness @ S9"
+    },
+    {
+      "kind": "curvature",
+      "index": 10,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S10"
+    },
+    {
+      "kind": "thickness",
+      "index": 10,
+      "term": 0,
+      "lower": 0.3,
+      "upper": 10.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S10"
+    },
+    {
+      "kind": "curvature",
+      "index": 11,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S11"
+    },
+    {
+      "kind": "thickness",
+      "index": 11,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.2870000000000001,
+      "role": "hybrid-initial thickness @ S11"
+    },
+    {
+      "kind": "curvature",
+      "index": 12,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S12"
+    },
+    {
+      "kind": "thickness",
+      "index": 12,
+      "term": 0,
+      "lower": 0.3,
+      "upper": 10.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S12"
+    },
+    {
+      "kind": "curvature",
+      "index": 13,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S13"
+    },
+    {
+      "kind": "thickness",
+      "index": 13,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S13"
+    },
+    {
+      "kind": "thickness",
+      "index": 1,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.2870000000000001,
+      "role": "hybrid-initial thickness @ S1"
+    },
+    {
+      "kind": "conic",
+      "index": 2,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S2"
+    },
+    {
+      "kind": "material_nd",
+      "index": 2,
+      "term": 0,
+      "lower": 1.486668,
+      "upper": 1.697806,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S2"
+    },
+    {
+      "kind": "material_vd",
+      "index": 2,
+      "term": 0,
+      "lower": 16.622205,
+      "upper": 60.290539,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S2"
+    },
+    {
+      "kind": "conic",
+      "index": 3,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S3"
+    },
+    {
+      "kind": "conic",
+      "index": 4,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S4"
+    },
+    {
+      "kind": "material_nd",
+      "index": 4,
+      "term": 0,
+      "lower": 1.486668,
+      "upper": 1.697806,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S4"
+    },
+    {
+      "kind": "material_vd",
+      "index": 4,
+      "term": 0,
+      "lower": 16.622205,
+      "upper": 60.290539,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S4"
+    },
+    {
+      "kind": "conic",
+      "index": 5,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S5"
+    },
+    {
+      "kind": "conic",
+      "index": 6,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S6"
+    },
+    {
+      "kind": "material_nd",
+      "index": 6,
+      "term": 0,
+      "lower": 1.486668,
+      "upper": 1.697806,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S6"
+    },
+    {
+      "kind": "material_vd",
+      "index": 6,
+      "term": 0,
+      "lower": 16.622205,
+      "upper": 60.290539,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S6"
+    },
+    {
+      "kind": "conic",
+      "index": 7,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S7"
+    },
+    {
+      "kind": "conic",
+      "index": 8,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S8"
+    },
+    {
+      "kind": "material_nd",
+      "index": 8,
+      "term": 0,
+      "lower": 1.486668,
+      "upper": 1.697806,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S8"
+    },
+    {
+      "kind": "material_vd",
+      "index": 8,
+      "term": 0,
+      "lower": 16.622205,
+      "upper": 60.290539,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S8"
+    },
+    {
+      "kind": "conic",
+      "index": 9,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S9"
+    },
+    {
+      "kind": "conic",
+      "index": 10,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S10"
+    },
+    {
+      "kind": "material_nd",
+      "index": 10,
+      "term": 0,
+      "lower": 1.486668,
+      "upper": 1.697806,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S10"
+    },
+    {
+      "kind": "material_vd",
+      "index": 10,
+      "term": 0,
+      "lower": 16.622205,
+      "upper": 60.290539,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S10"
+    },
+    {
+      "kind": "conic",
+      "index": 11,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S11"
+    },
+    {
+      "kind": "conic",
+      "index": 12,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S12"
+    },
+    {
+      "kind": "material_nd",
+      "index": 12,
+      "term": 0,
+      "lower": 1.486668,
+      "upper": 1.697806,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S12"
+    },
+    {
+      "kind": "material_vd",
+      "index": 12,
+      "term": 0,
+      "lower": 16.622205,
+      "upper": 60.290539,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S12"
+    },
+    {
+      "kind": "conic",
+      "index": 13,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S13"
+    }
+  ]
+}

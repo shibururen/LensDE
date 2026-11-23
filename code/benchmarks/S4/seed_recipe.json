@@ -1,0 +1,2334 @@
+{
+  "schema_version": 1,
+  "task": "S4",
+  "status": "evidence_mapping_not_a_complete_runtime_profile",
+  "configured_seed_options": {
+    "spot_sampling_seed": 1,
+    "adaptive_basin_active_niche_elite_seed_count": 1,
+    "adaptive_basin_active_focus_elite_seed_count": 1,
+    "refresh_seed_pool_fraction": 0,
+    "refresh_seed_pool_perturbation": 0,
+    "seed": 20260515,
+    "hammer_seed": 0,
+    "initial_search_seed_air_thickness_cap": 25,
+    "initial_search_seed_glass_thickness_cap": 2,
+    "initial_search_adaptive_seed_thickness_caps": true,
+    "initial_search_seed_ttl_allow_short": true,
+    "initial_search_seed_ttl_max_factor": 1,
+    "initial_search_seed_material_nd_cap": 0.45,
+    "initial_search_seed_material_vd_cap": 50,
+    "initial_search_seed_pool_population_multiplier": 2,
+    "initial_search_basin_active_niche_elite_seed_count": 1,
+    "initial_search_basin_active_focus_elite_seed_count": 1,
+    "initial_search_funnel_global_micro_island_seed_scale": 0.65,
+    "initial_search_funnel_global_micro_island_family_seed_limit": 24,
+    "initial_search_funnel_global_micro_island_refresh_archive_seed_limit": 24,
+    "initial_search_funnel_global_explore_full_restart_shared_seed_pool": true,
+    "initial_search_funnel_global_explore_full_restart_seed_pool_multiplier": 1.0,
+    "initial_search_explore_develop_seed_stride": 10000,
+    "initial_search_restart_seed_topology_novelty": false,
+    "initial_search_restart_seed_topology_scan_limit": 0,
+    "initial_search_refresh_seed_pool_fraction": 0,
+    "initial_search_refresh_seed_pool_perturbation": 0,
+    "initial_search_funnel_stage_seed_trace_gate": true,
+    "initial_search_funnel_stage_seed_gate_candidate_factor": 8,
+    "initial_search_funnel_stage_seed_gate_batch_factor": 1,
+    "initial_search_funnel_stage_seed_gate_final_recheck": true,
+    "initial_search_seed_trace_strategy": "anchor_sparse_refill",
+    "initial_search_seed_cap_scout_enabled": true,
+    "initial_search_seed_cap_scout_list": "0.01,0.02,0.04",
+    "initial_search_seed_cap_scout_candidates": 6144,
+    "initial_search_checkpoint_optimizer_seed": 20261729,
+    "initial_search_checkpoint_population_seed": 2026072400,
+    "initial_search_de_dls_material_chromatic_repair_seed": 20260804,
+    "initial_search_de_dls_material_bridge_seed": 20260719,
+    "initial_search_de_dls_fixed_glass_feedback_seed": 20260704,
+    "initial_search_de_dls_fixed_glass_feedback_rng_seed": 104729,
+    "initial_search_post_asphere_seed": 20260709,
+    "initial_search_post_asphere_rng_seed": 104729,
+    "initial_search_post_asphere_sampling_seed": 1,
+    "initial_search_de_dls_fixed_glass_feedback_seed_policy": "stable_candidate_identity_v1",
+    "initial_search_seed_pool_target_count": 3350
+  },
+  "initial_population_saved_seed_fields": [
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/seed_pool_target",
+      "context": "S4:stage_evidence",
+      "key": "seed_pool_target",
+      "saved_value": 3350,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/base_seed_pool_target",
+      "context": "S4:stage_evidence",
+      "key": "base_seed_pool_target",
+      "saved_value": 1340,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/seed_pool_multiplier",
+      "context": "S4:stage_evidence",
+      "key": "seed_pool_multiplier",
+      "saved_value": 2.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_shared_seed_pool_enabled",
+      "context": "S4:stage_evidence",
+      "key": "full_restart_shared_seed_pool_enabled",
+      "saved_value": true,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_shared_seed_pool_target",
+      "context": "S4:stage_evidence",
+      "key": "full_restart_shared_seed_pool_target",
+      "saved_value": 3350,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_seed_restarts",
+      "context": "S4:stage_evidence",
+      "key": "full_restart_seed_restarts",
+      "saved_value": 5,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_per_outer_seed_pool_target",
+      "context": "S4:stage_evidence",
+      "key": "full_restart_per_outer_seed_pool_target",
+      "saved_value": 670,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_seed_pool_multiplier",
+      "context": "S4:stage_evidence",
+      "key": "full_restart_seed_pool_multiplier",
+      "saved_value": 1.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/adaptive_seed_thickness_caps",
+      "context": "S4:stage_evidence",
+      "key": "adaptive_seed_thickness_caps",
+      "saved_value": true,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/thickness_budget/seed_air_cap",
+      "context": "S4:stage_evidence",
+      "key": "seed_air_cap",
+      "saved_value": 40.800000000000004,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/thickness_budget/seed_glass_cap",
+      "context": "S4:stage_evidence",
+      "key": "seed_glass_cap",
+      "saved_value": 9.18,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/ttl_thickness_projection/allow_short_seed",
+      "context": "S4:stage_evidence",
+      "key": "allow_short_seed",
+      "saved_value": true,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/ttl_thickness_projection/seed_max_factor",
+      "context": "S4:stage_evidence",
+      "key": "seed_max_factor",
+      "saved_value": 1.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/ttl_thickness_projection/seed_target_lower",
+      "context": "S4:stage_evidence",
+      "key": "seed_target_lower",
+      "saved_value": 41.9,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/ttl_thickness_projection/seed_target_upper",
+      "context": "S4:stage_evidence",
+      "key": "seed_target_upper",
+      "saved_value": 110.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/seed_air_thickness_cap",
+      "context": "S4:stage_evidence",
+      "key": "seed_air_thickness_cap",
+      "saved_value": 40.800000000000004,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/seed_glass_thickness_cap",
+      "context": "S4:stage_evidence",
+      "key": "seed_glass_thickness_cap",
+      "saved_value": 9.18,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\anchor_cloud_summary.json",
+      "json_pointer": "/seed_budget_feasible_count",
+      "context": "S4:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 3405,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\cap_production_summary.json",
+      "json_pointer": "/stages/0/seed_budget_feasible_count",
+      "context": "S4:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 4616,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\cap_production_summary.json",
+      "json_pointer": "/stages/1/seed_budget_feasible_count",
+      "context": "S4:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 4576,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\cap_scout_summary.json",
+      "json_pointer": "/stages/0/seed_budget_feasible_count",
+      "context": "S4:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 368,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\cap_scout_summary.json",
+      "json_pointer": "/stages/1/seed_budget_feasible_count",
+      "context": "S4:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 349,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\cap_scout_summary.json",
+      "json_pointer": "/stages/2/seed_budget_feasible_count",
+      "context": "S4:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 358,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\selection_summary.json",
+      "json_pointer": "/selected_seed_population_write_seconds",
+      "context": "S4:stage_evidence",
+      "key": "selected_seed_population_write_seconds",
+      "saved_value": 0.12109112739562988,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/ttl_thickness_projection/allow_short_seed",
+      "context": "S4:stage_evidence",
+      "key": "allow_short_seed",
+      "saved_value": true,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/ttl_thickness_projection/seed_max_factor",
+      "context": "S4:stage_evidence",
+      "key": "seed_max_factor",
+      "saved_value": 1.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/ttl_thickness_projection/seed_target_lower",
+      "context": "S4:stage_evidence",
+      "key": "seed_target_lower",
+      "saved_value": 41.9,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/ttl_thickness_projection/seed_target_upper",
+      "context": "S4:stage_evidence",
+      "key": "seed_target_upper",
+      "saved_value": 110.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/stages/0/seed_budget_feasible_count",
+      "context": "S4:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 3478,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/stages/1/seed_budget_feasible_count",
+      "context": "S4:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 3645,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/stages/2/seed_budget_feasible_count",
+      "context": "S4:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 3808,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    }
+  ],
+  "command_seed_plans": [
+    {
+      "command_id": "970a4c681ac1af8796beaad83035293c44ece38013bf68fd04b5644f9e0c6b24",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/0/command",
+          "context": "S4",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/0/command",
+          "context": "S4",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/0/command",
+          "context": "S4",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/0/command",
+          "context": "S4",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/0/command",
+          "context": "S4",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/0/command",
+          "context": "S4",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "30b6c84e0051dc13d5438a22b0a8acbc1c0377f5d3436c46e108e4acd3307ffb",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/1/command",
+          "context": "S4",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/1/command",
+          "context": "S4",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/1/command",
+          "context": "S4",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/1/command",
+          "context": "S4",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/1/command",
+          "context": "S4",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/1/command",
+          "context": "S4",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "335711a9b6083dd0ef96aae6048e59a53d34c8df01b00689e82db7249c2702b8",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/2/command",
+          "context": "S4",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/2/command",
+          "context": "S4",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/2/command",
+          "context": "S4",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/2/command",
+          "context": "S4",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/2/command",
+          "context": "S4",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/2/command",
+          "context": "S4",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "7e5443d1587fc80e56c62ed89f6aea15450e396577247a0264b8949fc6dda7a0",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/3/command",
+          "context": "S4",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/3/command",
+          "context": "S4",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/3/command",
+          "context": "S4",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/3/command",
+          "context": "S4",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/3/command",
+          "context": "S4",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/3/command",
+          "context": "S4",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "f9ed3410532a223c40b19d19ff93e8f0ee28ff623251e1372fad1f2113944911",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/4/command",
+          "context": "S4",
+          "name": "cap_production_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/4/command",
+          "context": "S4",
+          "name": "cap_production_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/4/command",
+          "context": "S4",
+          "name": "cap_production_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/4/command",
+          "context": "S4",
+          "name": "cap_production_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/4/command",
+          "context": "S4",
+          "name": "cap_production_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/4/command",
+          "context": "S4",
+          "name": "cap_production_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "4c65eea059143f2ea1b784d49eede2a2fc7d01f3d53d920e7282c6960733f5ab",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/5/command",
+          "context": "S4",
+          "name": "anchor_cloud",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/5/command",
+          "context": "S4",
+          "name": "anchor_cloud",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/5/command",
+          "context": "S4",
+          "name": "anchor_cloud",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/5/command",
+          "context": "S4",
+          "name": "anchor_cloud",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/5/command",
+          "context": "S4",
+          "name": "anchor_cloud",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/5/command",
+          "context": "S4",
+          "name": "anchor_cloud",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "c961604d1e690221b7f3dd6bee7cd9bad1136a75c5a4a83e7d38180ba47e636e",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/6/command",
+          "context": "S4",
+          "name": "sparse_refill_000_ind_sparse_micro_p035",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/6/command",
+          "context": "S4",
+          "name": "sparse_refill_000_ind_sparse_micro_p035",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/6/command",
+          "context": "S4",
+          "name": "sparse_refill_000_ind_sparse_micro_p035",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/6/command",
+          "context": "S4",
+          "name": "sparse_refill_000_ind_sparse_micro_p035",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/6/command",
+          "context": "S4",
+          "name": "sparse_refill_000_ind_sparse_micro_p035",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/6/command",
+          "context": "S4",
+          "name": "sparse_refill_000_ind_sparse_micro_p035",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "7f44b56d9c8a60e0a11e91bc702506130272eecace05ed5e886c82c5eef2be26",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/7/command",
+          "context": "S4",
+          "name": "sparse_refill_001_ind_sparse_small_p025",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/7/command",
+          "context": "S4",
+          "name": "sparse_refill_001_ind_sparse_small_p025",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/7/command",
+          "context": "S4",
+          "name": "sparse_refill_001_ind_sparse_small_p025",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/7/command",
+          "context": "S4",
+          "name": "sparse_refill_001_ind_sparse_small_p025",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/7/command",
+          "context": "S4",
+          "name": "sparse_refill_001_ind_sparse_small_p025",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/7/command",
+          "context": "S4",
+          "name": "sparse_refill_001_ind_sparse_small_p025",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "6782ab2b37d9811d7ed183b83bfee2bbcfc77f8f824b397579a1cddd1fddaf81",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/8/command",
+          "context": "S4",
+          "name": "sparse_refill_002_ind_sparse_medium_p015",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/8/command",
+          "context": "S4",
+          "name": "sparse_refill_002_ind_sparse_medium_p015",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/8/command",
+          "context": "S4",
+          "name": "sparse_refill_002_ind_sparse_medium_p015",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/8/command",
+          "context": "S4",
+          "name": "sparse_refill_002_ind_sparse_medium_p015",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/8/command",
+          "context": "S4",
+          "name": "sparse_refill_002_ind_sparse_medium_p015",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/8/command",
+          "context": "S4",
+          "name": "sparse_refill_002_ind_sparse_medium_p015",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "e6c73252bcffea7bdc579ec38e954dd52573b8d6cfec6ab4fb74551181500efe",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20261524",
+          "integer_value": 20261524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/9/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/9/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/9/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/9/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/9/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/9/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "c9fe38e086cde67eed74223e36c91f2acea9edea4613fa859bac8b75da0a0772",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20271524",
+          "integer_value": 20271524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/10/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/10/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/10/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/10/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/10/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/10/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "e431170106e679d72711f18572a5ee39227a49c2a84108607c1d01bbdd06fac3",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20281524",
+          "integer_value": 20281524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/11/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/11/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/11/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/11/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/11/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/11/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "28e6c1762215a15a46ff6b83915654211180d6ef91744c84746366882042cfbf",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20291524",
+          "integer_value": 20291524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/12/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/12/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/12/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/12/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/12/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/12/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "69c6b8383340d942dc8a2cb259f5dbff10bbf6a5fc151edfede28dd519c367a3",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20301524",
+          "integer_value": 20301524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/13/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/13/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/13/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/13/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/13/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/13/command",
+          "context": "S4",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "a24206115bf6d645abf3f81f8abf64bb3ae29af608a1b1c4e743033bab9a0414",
+      "argv_seed_flags": [
+        {
+          "flag": "--checkpoint-optimizer-seed",
+          "argv_index": 32,
+          "raw_value": "20261729",
+          "integer_value": 20261729
+        },
+        {
+          "flag": "--checkpoint-population-seed",
+          "argv_index": 34,
+          "raw_value": "2026072400",
+          "integer_value": 2026072400
+        },
+        {
+          "flag": "--material-chromatic-repair-seed",
+          "argv_index": 69,
+          "raw_value": "20260804",
+          "integer_value": 20260804
+        },
+        {
+          "flag": "--material-bridge-seed",
+          "argv_index": 161,
+          "raw_value": "20260719",
+          "integer_value": 20260719
+        },
+        {
+          "flag": "--fixed-glass-feedback-seed",
+          "argv_index": 303,
+          "raw_value": "20260704",
+          "integer_value": 20260704
+        },
+        {
+          "flag": "--fixed-glass-feedback-rng-seed",
+          "argv_index": 305,
+          "raw_value": "104729",
+          "integer_value": 104729
+        },
+        {
+          "flag": "--fixed-glass-feedback-seed-policy",
+          "argv_index": 307,
+          "raw_value": "stable_candidate_identity_v1",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\run_meta.json",
+          "json_pointer": "/stages/14/command",
+          "context": "S4",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/14/command",
+          "context": "S4",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/stages/14/command",
+          "context": "S4",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s4\\run_meta.json/summary/stages/14/command",
+          "context": "S4",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/14/command",
+          "context": "S4",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\effective_repro_settings.json",
+          "json_pointer": "/stages/14/command",
+          "context": "S4",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "7ddfc1c91053f91221dc1133d94e75e04f8fca644c21f803a84cd7e87acbd866",
+      "argv_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "399401708",
+          "integer_value": 399401708
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\command.json",
+          "json_pointer": "",
+          "context": "S4:stage_evidence",
+          "name": null,
+          "direct_status": {},
+          "parent_status": null,
+          "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+        }
+      ]
+    },
+    {
+      "command_id": "0916868ce03f0f4b47b596b10bbd6c70eae1fa080a5119410dff2943b940ccc6",
+      "argv_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1947060983",
+          "integer_value": 1947060983
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\command.json",
+          "json_pointer": "",
+          "context": "S4:stage_evidence",
+          "name": null,
+          "direct_status": {},
+          "parent_status": null,
+          "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+        }
+      ]
+    },
+    {
+      "command_id": "e5838a26ff3d29be7a215a918341458ae4b892dfb8dffd5b93d0bc6085a87bf7",
+      "argv_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1616448080",
+          "integer_value": 1616448080
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\command.json",
+          "json_pointer": "",
+          "context": "S4:stage_evidence",
+          "name": null,
+          "direct_status": {},
+          "parent_status": null,
+          "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+        }
+      ]
+    },
+    {
+      "command_id": "48d024e2d9a0d7b04ee4f1212a6571fea61251ceae3c06e703d25c10b4e19138",
+      "argv_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "681450661",
+          "integer_value": 681450661
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\command.json",
+          "json_pointer": "",
+          "context": "S4:stage_evidence",
+          "name": null,
+          "direct_status": {},
+          "parent_status": null,
+          "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+        }
+      ]
+    }
+  ],
+  "fixed_material_candidate_mapping": [
+    {
+      "candidate_archive_id": "repair_001_rank_0001",
+      "summary_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\summary.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S4_11P_0918_004812_c8d2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_001_rank_0001/summary.json",
+        "bytes": 2733,
+        "sha256": "2142f7428d054af0497360fcc123d0d540c37bb23b9eb8a3517d70acd27beb93"
+      },
+      "saved_values": {
+        "cycle": 1,
+        "source_rank": 4,
+        "source": "run",
+        "source_dir": "D:\\PycharmProjects\\Optiland\\r\\om7s4\\_de\\glass_scout\\islands\\c02r0001\\run",
+        "out_dir": "D:\\PycharmProjects\\Optiland\\r\\om7s4\\_de\\locked_de\\rfn\\04_run\\locked_g_6b9edeac476f\\run",
+        "seed_policy": "stable_candidate_identity_v1",
+        "seed_key": "sha256:edbcf9b373be71c467c0c6cf4dd113c0420cedfe7a7eeefb70cf454361b732fe",
+        "optimizer_seed_base": 20260704,
+        "population_seed_base": 104729,
+        "optimizer_seed": 399401708,
+        "population_seed": 1694139182,
+        "returncode": 0,
+        "timed_out": false,
+        "materialization_valid": true,
+        "multi_island_cohort_id": "cohort_01"
+      },
+      "command_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\command.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S4_11P_0918_004812_c8d2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_001_rank_0001/command.json",
+        "bytes": 2872,
+        "sha256": "fbe9c1799f994c6df01466b3d7f23839f8d9667cae2310d389ce5db0a397cb32"
+      },
+      "command_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "399401708",
+          "integer_value": 399401708
+        }
+      ],
+      "identity_policy": "exact recorded candidate mapping; no hash or seed recomputation"
+    },
+    {
+      "candidate_archive_id": "repair_002_rank_0002",
+      "summary_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\summary.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S4_11P_0918_004812_c8d2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_002_rank_0002/summary.json",
+        "bytes": 2743,
+        "sha256": "0929ebb16979d8b570045d874d4ad8a0c94eb5db41f0866bd78d64a5fac44c07"
+      },
+      "saved_values": {
+        "cycle": 1,
+        "source_rank": 2,
+        "source": "run",
+        "source_dir": "D:\\PycharmProjects\\Optiland\\r\\om7s4\\_de\\glass_scout\\islands\\c01r0005\\run",
+        "out_dir": "D:\\PycharmProjects\\Optiland\\r\\om7s4\\_de\\locked_de\\rfn\\02_run\\locked_g_6b9edeac476f\\run",
+        "seed_policy": "stable_candidate_identity_v1",
+        "seed_key": "sha256:e9a8313761a0ab0a6e908dd2436a39ed1a5c8236df46adca98662e8cfc0eb9c5",
+        "optimizer_seed_base": 20260704,
+        "population_seed_base": 104729,
+        "optimizer_seed": 1947060983,
+        "population_seed": 757192636,
+        "returncode": 0,
+        "timed_out": false,
+        "materialization_valid": true,
+        "multi_island_cohort_id": "cohort_01"
+      },
+      "command_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\command.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S4_11P_0918_004812_c8d2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_002_rank_0002/command.json",
+        "bytes": 2873,
+        "sha256": "ded7d5146639aef42bb9cbae09f5eaa02b1daef44c814b4b7b88c5efb672dfba"
+      },
+      "command_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1947060983",
+          "integer_value": 1947060983
+        }
+      ],
+      "identity_policy": "exact recorded candidate mapping; no hash or seed recomputation"
+    },
+    {
+      "candidate_archive_id": "repair_003_rank_0003",
+      "summary_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\summary.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S4_11P_0918_004812_c8d2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_003_rank_0003/summary.json",
+        "bytes": 2741,
+        "sha256": "9f833bb9d47896213cb3a82c959b084b72206858271a7a58e8fe0f4f6813c917"
+      },
+      "saved_values": {
+        "cycle": 1,
+        "source_rank": 3,
+        "source": "run",
+        "source_dir": "D:\\PycharmProjects\\Optiland\\r\\om7s4\\_de\\glass_scout\\islands\\c04r0003\\run",
+        "out_dir": "D:\\PycharmProjects\\Optiland\\r\\om7s4\\_de\\locked_de\\rfn\\03_run\\locked_g_6b9edeac476f\\run",
+        "seed_policy": "stable_candidate_identity_v1",
+        "seed_key": "sha256:b2eda33e5ed84efa70046e59d39c66f55c695105ba1e76c754d6e63dcb0d1506",
+        "optimizer_seed_base": 20260704,
+        "population_seed_base": 104729,
+        "optimizer_seed": 1616448080,
+        "population_seed": 376120047,
+        "returncode": 0,
+        "timed_out": false,
+        "materialization_valid": true,
+        "multi_island_cohort_id": "cohort_01"
+      },
+      "command_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\command.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S4_11P_0918_004812_c8d2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_003_rank_0003/command.json",
+        "bytes": 2873,
+        "sha256": "1f0ec18669a01b3d14c674c86e23a656a6812cf3aeb9380077c904c5949298da"
+      },
+      "command_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1616448080",
+          "integer_value": 1616448080
+        }
+      ],
+      "identity_policy": "exact recorded candidate mapping; no hash or seed recomputation"
+    },
+    {
+      "candidate_archive_id": "repair_004_rank_0004",
+      "summary_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\summary.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S4_11P_0918_004812_c8d2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_004_rank_0004/summary.json",
+        "bytes": 2728,
+        "sha256": "28b8551b871a106bb6943dd8dc92aefbc27b28d66969d436decd2e6138a69275"
+      },
+      "saved_values": {
+        "cycle": 1,
+        "source_rank": 1,
+        "source": "run",
+        "source_dir": "D:\\PycharmProjects\\Optiland\\r\\om7s4\\_de\\glass_scout\\islands\\c03r0002\\run",
+        "out_dir": "D:\\PycharmProjects\\Optiland\\r\\om7s4\\_de\\locked_de\\rfn\\01_run\\locked_g_6b9edeac476f\\run",
+        "seed_policy": "stable_candidate_identity_v1",
+        "seed_key": "sha256:fba0c5707a99722877119cacd7d7b57420a631b64875574b5f155467ae391f0f",
+        "optimizer_seed_base": 20260704,
+        "population_seed_base": 104729,
+        "optimizer_seed": 681450661,
+        "population_seed": 1956431856,
+        "returncode": 0,
+        "timed_out": false,
+        "materialization_valid": true,
+        "multi_island_cohort_id": "cohort_01"
+      },
+      "command_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S4_11P_0918_004812_c8d2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\command.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S4_11P_0918_004812_c8d2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_004_rank_0004/command.json",
+        "bytes": 2872,
+        "sha256": "15822f035b20a02770aa156016475ce55421096c3ba98dcf9327dcfbc235e723"
+      },
+      "command_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "681450661",
+          "integer_value": 681450661
+        }
+      ],
+      "identity_policy": "exact recorded candidate mapping; no hash or seed recomputation"
+    }
+  ],
+  "unresolved": [
+    "Every Python/native RNG invocation and consumption order is not yet traced.",
+    "This exact saved-candidate mapping does not define seeds for unseen candidates.",
+    "Root configured bases may differ from actual per-stage bases; saved candidate bases take precedence as evidence."
+  ]
+}

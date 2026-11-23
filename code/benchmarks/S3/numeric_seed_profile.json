@@ -1,0 +1,3329 @@
+{
+  "schema_version": 1,
+  "task": "S3",
+  "profile_name": "S3_formal_20260918",
+  "reference_master_seed": 20260519,
+  "reference_initial_seed": 20260519,
+  "profile": {
+    "schema_version": 2,
+    "name": "S3_formal_20260918",
+    "reference_master_seed": 20260519,
+    "reference_initial_seed": 20260519,
+    "source_archive": "S3_10P_0918_045620_b8b1",
+    "benchmark_task": "S3",
+    "option_seeds": {
+      "initial_search_checkpoint_optimizer_seed": 20261733,
+      "initial_search_checkpoint_population_seed": 2026072404,
+      "initial_search_de_dls_material_chromatic_repair_seed": 20260808,
+      "initial_search_de_dls_material_bridge_seed": 20260723,
+      "initial_search_de_dls_fixed_glass_feedback_seed": 20260708,
+      "initial_search_de_dls_fixed_glass_feedback_rng_seed": 104733,
+      "initial_search_post_asphere_seed": 20260713,
+      "initial_search_post_asphere_rng_seed": 104733,
+      "initial_search_de_dls_glass_scout_seed": 20260726,
+      "initial_search_de_dls_glass_scout_rng_seed": 104729
+    },
+    "fixed_glass_feedback": {
+      "locked_glass/adaptive_jade/4": {
+        "optimizer_seed": 1726214524,
+        "population_seed": 261277388
+      },
+      "locked_glass/adaptive_jade/2": {
+        "optimizer_seed": 335190838,
+        "population_seed": 154290202
+      },
+      "locked_glass/adaptive_jade/3": {
+        "optimizer_seed": 1105406865,
+        "population_seed": 1556709774
+      },
+      "locked_glass/adaptive_jade/1": {
+        "optimizer_seed": 1154721276,
+        "population_seed": 924020730
+      }
+    },
+    "post_asphere_stage_seeds": {},
+    "inactive_unrecorded_options": [
+      "initial_search_funnel_probe_selection_seed"
+    ],
+    "source_provenance": {
+      "saved_options_sha256": "12a12d43c705337bcbdb4371ff270f7e1cddd5a66ba0e92af60770282f4e1286",
+      "glass_scout_configuration_source": "optiland_cpp/gui/work/formal_new/S3_10P_0918_045620_b8b1/de_dls_key_outputs/summaries/layer2_material5_bridge_report.json",
+      "glass_scout_configuration_sha256": "c9a0d3f1c9921e90516794853dde3f6f711be278fa40d523f136b74b36b68b5e"
+    },
+    "scope": "Recorded spherical workflow. Polynomial stage disabled. Probe-selection branch inactive and not synthesized."
+  },
+  "decision_seed_registry": {
+    "schema_version": 1,
+    "profile": "S3_formal_20260918",
+    "benchmark_task": "S3",
+    "reference_master_seed": 20260519,
+    "command_count": 15,
+    "coordinate_count": 51,
+    "coordinates": {
+      "command:0000:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "4a09e323c1c19e74fc571a1d8958a8590b592ffb9077cd759f944991f7550c5a",
+        "command_index": 0,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0000:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "4a09e323c1c19e74fc571a1d8958a8590b592ffb9077cd759f944991f7550c5a",
+        "command_index": 0,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/0/command",
+            "context": "S3",
+            "name": "cap_scout_0.01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0001:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "661114632f3540f413db22ba6258fb5d5babc3a26cf36b937929a941aa9b0333",
+        "command_index": 1,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0001:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "661114632f3540f413db22ba6258fb5d5babc3a26cf36b937929a941aa9b0333",
+        "command_index": 1,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/1/command",
+            "context": "S3",
+            "name": "cap_scout_0.02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0002:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "85552b737f98a5c0477782d93276d002525065ff237b9c5d1926fb1a3785b5d5",
+        "command_index": 2,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0002:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "85552b737f98a5c0477782d93276d002525065ff237b9c5d1926fb1a3785b5d5",
+        "command_index": 2,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/2/command",
+            "context": "S3",
+            "name": "cap_scout_0.04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0003:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "fb388d640bcecc0f4b3a1678baee5573dac274dfdb7b6edcef744c87d2188dc0",
+        "command_index": 3,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0003:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "fb388d640bcecc0f4b3a1678baee5573dac274dfdb7b6edcef744c87d2188dc0",
+        "command_index": 3,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/3/command",
+            "context": "S3",
+            "name": "cap_production_00",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0004:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "551f4ef06a5d7c4e46dd9b2eb14077f79d5e88f722af8c8860f9ae0bdb858788",
+        "command_index": 4,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0004:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "551f4ef06a5d7c4e46dd9b2eb14077f79d5e88f722af8c8860f9ae0bdb858788",
+        "command_index": 4,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/4/command",
+            "context": "S3",
+            "name": "cap_production_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0005:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "69f37714801d31a801c71b2db176d09779ce19ecee6e716df7e6d422941357f4",
+        "command_index": 5,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0005:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "69f37714801d31a801c71b2db176d09779ce19ecee6e716df7e6d422941357f4",
+        "command_index": 5,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0005:seed:50": {
+        "reference_seed": 20261528,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "69f37714801d31a801c71b2db176d09779ce19ecee6e716df7e6d422941357f4",
+        "command_index": 5,
+        "argv_index": 50,
+        "flag": "--seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/5/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_01",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0006:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "839130bb87079031952395639037341e1c52d1ddde586372a3e31f37f5e5b1aa",
+        "command_index": 6,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0006:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "839130bb87079031952395639037341e1c52d1ddde586372a3e31f37f5e5b1aa",
+        "command_index": 6,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0006:seed:50": {
+        "reference_seed": 20271528,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "839130bb87079031952395639037341e1c52d1ddde586372a3e31f37f5e5b1aa",
+        "command_index": 6,
+        "argv_index": 50,
+        "flag": "--seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/6/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_02",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0007:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "072d2150ae4320d458afb3d07f383102b9c66a80db1179057d5c002f0ba65daa",
+        "command_index": 7,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0007:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "072d2150ae4320d458afb3d07f383102b9c66a80db1179057d5c002f0ba65daa",
+        "command_index": 7,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0007:seed:50": {
+        "reference_seed": 20281528,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "072d2150ae4320d458afb3d07f383102b9c66a80db1179057d5c002f0ba65daa",
+        "command_index": 7,
+        "argv_index": 50,
+        "flag": "--seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/7/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_03",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0008:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "7d5264209f419ed4ded87f81901d8a486716cf6dc141934ca04b211aebb32a21",
+        "command_index": 8,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0008:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "7d5264209f419ed4ded87f81901d8a486716cf6dc141934ca04b211aebb32a21",
+        "command_index": 8,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0008:seed:50": {
+        "reference_seed": 20291528,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "7d5264209f419ed4ded87f81901d8a486716cf6dc141934ca04b211aebb32a21",
+        "command_index": 8,
+        "argv_index": 50,
+        "flag": "--seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/8/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_04",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0009:sampling-seed:17": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "7c6f336a759c5d4d487920a178aacd3ead0af31b74dcb36266b903069bf93fc1",
+        "command_index": 9,
+        "argv_index": 17,
+        "flag": "--sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0009:spot-sampling-seed:25": {
+        "reference_seed": 1,
+        "master_sensitive": false,
+        "kind": "saved_command_argument",
+        "command_id": "7c6f336a759c5d4d487920a178aacd3ead0af31b74dcb36266b903069bf93fc1",
+        "command_index": 9,
+        "argv_index": 25,
+        "flag": "--spot-sampling-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0009:seed:50": {
+        "reference_seed": 20301528,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "7c6f336a759c5d4d487920a178aacd3ead0af31b74dcb36266b903069bf93fc1",
+        "command_index": 9,
+        "argv_index": 50,
+        "flag": "--seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/9/command",
+            "context": "S3",
+            "name": "funnel_global_explore_outer_05",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0010:checkpoint-optimizer-seed:32": {
+        "reference_seed": 20261733,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "6c17fe369790d41fafa9bfa9980a60a51782416634c60e720daf33d61c63422b",
+        "command_index": 10,
+        "argv_index": 32,
+        "flag": "--checkpoint-optimizer-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0010:checkpoint-population-seed:34": {
+        "reference_seed": 2026072404,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "6c17fe369790d41fafa9bfa9980a60a51782416634c60e720daf33d61c63422b",
+        "command_index": 10,
+        "argv_index": 34,
+        "flag": "--checkpoint-population-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0010:material-chromatic-repair-seed:69": {
+        "reference_seed": 20260808,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "6c17fe369790d41fafa9bfa9980a60a51782416634c60e720daf33d61c63422b",
+        "command_index": 10,
+        "argv_index": 69,
+        "flag": "--material-chromatic-repair-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0010:material-bridge-seed:161": {
+        "reference_seed": 20260723,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "6c17fe369790d41fafa9bfa9980a60a51782416634c60e720daf33d61c63422b",
+        "command_index": 10,
+        "argv_index": 161,
+        "flag": "--material-bridge-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0010:fixed-glass-feedback-seed:303": {
+        "reference_seed": 20260708,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "6c17fe369790d41fafa9bfa9980a60a51782416634c60e720daf33d61c63422b",
+        "command_index": 10,
+        "argv_index": 303,
+        "flag": "--fixed-glass-feedback-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0010:fixed-glass-feedback-rng-seed:305": {
+        "reference_seed": 104733,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "6c17fe369790d41fafa9bfa9980a60a51782416634c60e720daf33d61c63422b",
+        "command_index": 10,
+        "argv_index": 305,
+        "flag": "--fixed-glass-feedback-rng-seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": null,
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/run_meta/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+            "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/run_meta_without_options/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          },
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+            "json_pointer": "/stages/10/command",
+            "context": "S3",
+            "name": "de_dls_material_funnel",
+            "direct_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "parent_status": {
+              "returncode": 0,
+              "timed_out": false
+            },
+            "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+          }
+        ]
+      },
+      "command:0011:seed:47": {
+        "reference_seed": 1726214524,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "d9fbe4e2641eb9c1967e547f6d471444127a8ebbec81f55fca95065446b4f7bc",
+        "command_index": 11,
+        "argv_index": 47,
+        "flag": "--seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\command.json",
+            "json_pointer": "",
+            "context": "S3:stage_evidence",
+            "name": null,
+            "direct_status": {},
+            "parent_status": null,
+            "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+          }
+        ]
+      },
+      "command:0012:seed:47": {
+        "reference_seed": 335190838,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "47a0cc37d0618ba271dfcdf12a149e61ae58756ee65a9d3fdada5c98eb8d61b5",
+        "command_index": 12,
+        "argv_index": 47,
+        "flag": "--seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\command.json",
+            "json_pointer": "",
+            "context": "S3:stage_evidence",
+            "name": null,
+            "direct_status": {},
+            "parent_status": null,
+            "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+          }
+        ]
+      },
+      "command:0013:seed:47": {
+        "reference_seed": 1105406865,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "af60574f4b04e49e3bdf2dc732e2a499efcf3f07a0185f573ea511e453889fda",
+        "command_index": 13,
+        "argv_index": 47,
+        "flag": "--seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\command.json",
+            "json_pointer": "",
+            "context": "S3:stage_evidence",
+            "name": null,
+            "direct_status": {},
+            "parent_status": null,
+            "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+          }
+        ]
+      },
+      "command:0014:seed:47": {
+        "reference_seed": 1154721276,
+        "master_sensitive": true,
+        "kind": "saved_command_argument",
+        "command_id": "46e0a5a7d72663dc3cd4b0f0b14f737cc47f2aa7231d9ecc15861ebc02caed3c",
+        "command_index": 14,
+        "argv_index": 47,
+        "flag": "--seed",
+        "sources": [
+          {
+            "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\command.json",
+            "json_pointer": "",
+            "context": "S3:stage_evidence",
+            "name": null,
+            "direct_status": {},
+            "parent_status": null,
+            "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+          }
+        ]
+      },
+      "record:00019:seed": {
+        "reference_seed": 20260519,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+        "json_pointer": "/options/seed",
+        "key": "seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00070:seed": {
+        "reference_seed": 20260519,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+        "json_pointer": "/project/options/seed",
+        "key": "seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00116:seed": {
+        "reference_seed": 20260519,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+        "json_pointer": "/options/seed",
+        "key": "seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00176:seed": {
+        "reference_seed": 20260519,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+        "json_pointer": "/run_meta/options/seed",
+        "key": "seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00263:seed": {
+        "reference_seed": 20260519,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\repro_manifest.json",
+        "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\r\\om7s3\\run_meta.json/summary/options/seed",
+        "key": "seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00441:seed": {
+        "reference_seed": 20260519,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\effective_repro_settings.json",
+        "json_pointer": "/all_project_options/seed",
+        "key": "seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00592:optimizer_seed": {
+        "reference_seed": 1726214524,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\summary.json",
+        "json_pointer": "/optimizer_seed",
+        "key": "optimizer_seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00593:population_seed": {
+        "reference_seed": 261277388,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\summary.json",
+        "json_pointer": "/population_seed",
+        "key": "population_seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00598:optimizer_seed": {
+        "reference_seed": 335190838,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\summary.json",
+        "json_pointer": "/optimizer_seed",
+        "key": "optimizer_seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00599:population_seed": {
+        "reference_seed": 154290202,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\summary.json",
+        "json_pointer": "/population_seed",
+        "key": "population_seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00604:optimizer_seed": {
+        "reference_seed": 1105406865,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\summary.json",
+        "json_pointer": "/optimizer_seed",
+        "key": "optimizer_seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00605:population_seed": {
+        "reference_seed": 1556709774,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\summary.json",
+        "json_pointer": "/population_seed",
+        "key": "population_seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00610:optimizer_seed": {
+        "reference_seed": 1154721276,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\summary.json",
+        "json_pointer": "/optimizer_seed",
+        "key": "optimizer_seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00611:population_seed": {
+        "reference_seed": 924020730,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\summary.json",
+        "json_pointer": "/population_seed",
+        "key": "population_seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00614:seed": {
+        "reference_seed": 20260808,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\de_dls_key_outputs\\summaries\\two_layer_funnel_config.json",
+        "json_pointer": "/material_chromatic_repair/seed",
+        "key": "seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      },
+      "record:00647:seed": {
+        "reference_seed": 20260519,
+        "master_sensitive": true,
+        "kind": "saved_stage_parameter",
+        "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S3_10P_0918_045620_b8b1\\run_meta.json",
+        "json_pointer": "/options/seed",
+        "key": "seed",
+        "qualification": "Explicit saved integer; invocation context preserved, not inferred from names like seed_count."
+      }
+    },
+    "source_sha256": "ede44429fd98ecd32891d5a6b5d30a141560c14cc602154dfc8f206994bb9847",
+    "source_version_contract": null
+  }
+}

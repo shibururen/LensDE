@@ -1,0 +1,652 @@
+{
+  "variables": [
+    {
+      "kind": "curvature",
+      "index": 2,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S2"
+    },
+    {
+      "kind": "thickness",
+      "index": 2,
+      "term": 0,
+      "lower": 0.05,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S2"
+    },
+    {
+      "kind": "curvature",
+      "index": 3,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S3"
+    },
+    {
+      "kind": "thickness",
+      "index": 3,
+      "term": 0,
+      "lower": 0.3,
+      "upper": 10.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S3"
+    },
+    {
+      "kind": "curvature",
+      "index": 4,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S4"
+    },
+    {
+      "kind": "thickness",
+      "index": 4,
+      "term": 0,
+      "lower": 0.05,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S4"
+    },
+    {
+      "kind": "curvature",
+      "index": 5,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S5"
+    },
+    {
+      "kind": "thickness",
+      "index": 5,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S5"
+    },
+    {
+      "kind": "curvature",
+      "index": 6,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S6"
+    },
+    {
+      "kind": "thickness",
+      "index": 6,
+      "term": 0,
+      "lower": 0.05,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S6"
+    },
+    {
+      "kind": "curvature",
+      "index": 7,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S7"
+    },
+    {
+      "kind": "thickness",
+      "index": 7,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S7"
+    },
+    {
+      "kind": "curvature",
+      "index": 8,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S8"
+    },
+    {
+      "kind": "thickness",
+      "index": 8,
+      "term": 0,
+      "lower": 0.05,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S8"
+    },
+    {
+      "kind": "curvature",
+      "index": 9,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S9"
+    },
+    {
+      "kind": "thickness",
+      "index": 9,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S9"
+    },
+    {
+      "kind": "curvature",
+      "index": 10,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S10"
+    },
+    {
+      "kind": "thickness",
+      "index": 10,
+      "term": 0,
+      "lower": 0.05,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S10"
+    },
+    {
+      "kind": "curvature",
+      "index": 11,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S11"
+    },
+    {
+      "kind": "thickness",
+      "index": 11,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S11"
+    },
+    {
+      "kind": "curvature",
+      "index": 12,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S12"
+    },
+    {
+      "kind": "thickness",
+      "index": 12,
+      "term": 0,
+      "lower": 0.05,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S12"
+    },
+    {
+      "kind": "curvature",
+      "index": 13,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S13"
+    },
+    {
+      "kind": "thickness",
+      "index": 13,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S13"
+    },
+    {
+      "kind": "curvature",
+      "index": 14,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S14"
+    },
+    {
+      "kind": "thickness",
+      "index": 14,
+      "term": 0,
+      "lower": 0.05,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S14"
+    },
+    {
+      "kind": "curvature",
+      "index": 15,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S15"
+    },
+    {
+      "kind": "thickness",
+      "index": 15,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S15"
+    },
+    {
+      "kind": "curvature",
+      "index": 16,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S16"
+    },
+    {
+      "kind": "thickness",
+      "index": 16,
+      "term": 0,
+      "lower": 0.05,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S16"
+    },
+    {
+      "kind": "curvature",
+      "index": 17,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S17"
+    },
+    {
+      "kind": "thickness",
+      "index": 17,
+      "term": 0,
+      "lower": 0.1,
+      "upper": 100.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S17"
+    },
+    {
+      "kind": "curvature",
+      "index": 18,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S18"
+    },
+    {
+      "kind": "thickness",
+      "index": 18,
+      "term": 0,
+      "lower": 0.05,
+      "upper": 100.0,
+      "initial": 0.249,
+      "role": "hybrid-initial thickness @ S18"
+    },
+    {
+      "kind": "curvature",
+      "index": 1,
+      "term": 0,
+      "lower": -0.5,
+      "upper": 0.5,
+      "initial": 0.0,
+      "role": "hybrid-initial curvature @ S1"
+    },
+    {
+      "kind": "thickness",
+      "index": 1,
+      "term": 0,
+      "lower": 0.3,
+      "upper": 10.0,
+      "initial": 1.0,
+      "role": "hybrid-initial thickness @ S1"
+    },
+    {
+      "kind": "conic",
+      "index": 1,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S1"
+    },
+    {
+      "kind": "material_nd",
+      "index": 1,
+      "term": 0,
+      "lower": 1.4261228000000001,
+      "upper": 2.0146172,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S1"
+    },
+    {
+      "kind": "material_vd",
+      "index": 1,
+      "term": 0,
+      "lower": 15.9314149,
+      "upper": 96.0644081,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S1"
+    },
+    {
+      "kind": "conic",
+      "index": 2,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S2"
+    },
+    {
+      "kind": "conic",
+      "index": 3,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S3"
+    },
+    {
+      "kind": "material_nd",
+      "index": 3,
+      "term": 0,
+      "lower": 1.4261228000000001,
+      "upper": 2.0146172,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S3"
+    },
+    {
+      "kind": "material_vd",
+      "index": 3,
+      "term": 0,
+      "lower": 15.9314149,
+      "upper": 96.0644081,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S3"
+    },
+    {
+      "kind": "conic",
+      "index": 4,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S4"
+    },
+    {
+      "kind": "conic",
+      "index": 5,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S5"
+    },
+    {
+      "kind": "material_nd",
+      "index": 5,
+      "term": 0,
+      "lower": 1.4261228000000001,
+      "upper": 2.0146172,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S5"
+    },
+    {
+      "kind": "material_vd",
+      "index": 5,
+      "term": 0,
+      "lower": 15.9314149,
+      "upper": 96.0644081,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S5"
+    },
+    {
+      "kind": "conic",
+      "index": 6,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S6"
+    },
+    {
+      "kind": "conic",
+      "index": 7,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S7"
+    },
+    {
+      "kind": "material_nd",
+      "index": 7,
+      "term": 0,
+      "lower": 1.4261228000000001,
+      "upper": 2.0146172,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S7"
+    },
+    {
+      "kind": "material_vd",
+      "index": 7,
+      "term": 0,
+      "lower": 15.9314149,
+      "upper": 96.0644081,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S7"
+    },
+    {
+      "kind": "conic",
+      "index": 8,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S8"
+    },
+    {
+      "kind": "conic",
+      "index": 9,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S9"
+    },
+    {
+      "kind": "material_nd",
+      "index": 9,
+      "term": 0,
+      "lower": 1.4261228000000001,
+      "upper": 2.0146172,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S9"
+    },
+    {
+      "kind": "material_vd",
+      "index": 9,
+      "term": 0,
+      "lower": 15.9314149,
+      "upper": 96.0644081,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S9"
+    },
+    {
+      "kind": "conic",
+      "index": 10,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S10"
+    },
+    {
+      "kind": "conic",
+      "index": 11,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S11"
+    },
+    {
+      "kind": "material_nd",
+      "index": 11,
+      "term": 0,
+      "lower": 1.4261228000000001,
+      "upper": 2.0146172,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S11"
+    },
+    {
+      "kind": "material_vd",
+      "index": 11,
+      "term": 0,
+      "lower": 15.9314149,
+      "upper": 96.0644081,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S11"
+    },
+    {
+      "kind": "conic",
+      "index": 12,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S12"
+    },
+    {
+      "kind": "conic",
+      "index": 13,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S13"
+    },
+    {
+      "kind": "material_nd",
+      "index": 13,
+      "term": 0,
+      "lower": 1.4261228000000001,
+      "upper": 2.0146172,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S13"
+    },
+    {
+      "kind": "material_vd",
+      "index": 13,
+      "term": 0,
+      "lower": 15.9314149,
+      "upper": 96.0644081,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S13"
+    },
+    {
+      "kind": "conic",
+      "index": 14,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S14"
+    },
+    {
+      "kind": "conic",
+      "index": 15,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S15"
+    },
+    {
+      "kind": "material_nd",
+      "index": 15,
+      "term": 0,
+      "lower": 1.4261228000000001,
+      "upper": 2.0146172,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S15"
+    },
+    {
+      "kind": "material_vd",
+      "index": 15,
+      "term": 0,
+      "lower": 15.9314149,
+      "upper": 96.0644081,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S15"
+    },
+    {
+      "kind": "conic",
+      "index": 16,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S16"
+    },
+    {
+      "kind": "conic",
+      "index": 17,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S17"
+    },
+    {
+      "kind": "material_nd",
+      "index": 17,
+      "term": 0,
+      "lower": 1.4261228000000001,
+      "upper": 2.0146172,
+      "initial": 1.5168,
+      "role": "H-K9L nd @ S17"
+    },
+    {
+      "kind": "material_vd",
+      "index": 17,
+      "term": 0,
+      "lower": 15.9314149,
+      "upper": 96.0644081,
+      "initial": 60.290539,
+      "role": "H-K9L Vd @ S17"
+    },
+    {
+      "kind": "conic",
+      "index": 18,
+      "term": 0,
+      "lower": -100.0,
+      "upper": 100.0,
+      "initial": 0.0,
+      "role": "initial-search conic @ S18"
+    }
+  ]
+}

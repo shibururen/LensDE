@@ -1,0 +1,56 @@
+{
+  "layout_source": "optiland_cpp/gui/index.html",
+  "layout_source_sha256": "05b1137606fa9a7af25e5c838fa9a107ac228c511acefd4a6991030e8073bde6",
+  "css_source": "optiland_cpp/gui/styles.css",
+  "css_source_sha256": "fb6f011236a72f465a8ab32d3e87c6958ec373ef5dddf842ec303dc615e73b2a",
+  "base_css_bytes": 8436,
+  "removed_groups": [
+    "hammer",
+    "data-initial-topology-greedy-graft-only",
+    "data-initial-not-topology-greedy-graft",
+    "fine_polish",
+    "setPlateSystem",
+    "initGlassVariables",
+    "downloadReproManifest",
+    "Probe Cycle",
+    "Topology Graft",
+    "旧流程：圆锥母结构多起点漏斗参数",
+    "旧多起点流程：Long refine-like 参数"
+  ],
+  "controller": "new module; original app.js normalization not copied",
+  "scientific_defaults_copied": false,
+  "ordinary_modes": [
+    "de",
+    "local"
+  ],
+  "ordinary_controls": [
+    "de_atol",
+    "de_strategy",
+    "de_tol",
+    "generations",
+    "local_bounds_mode",
+    "local_fd",
+    "local_iterations",
+    "local_lambda",
+    "local_max_reject",
+    "local_method",
+    "local_min_step",
+    "local_residual_mode",
+    "local_tol",
+    "mutation_max",
+    "mutation_min",
+    "population",
+    "recombination",
+    "seed"
+  ],
+  "further_removed_modes": [
+    "hybrid_de_dls",
+    "adaptive_hybrid_de_dls"
+  ],
+  "further_removed_controls": [
+    "options.initial_search_run_profile",
+    "options.initial_search_optimizer_mode",
+    "initial_search_asphere_* direct-high-order initial fields",
+    "Active Basin Gate / Refresh (inactive research cohort)"
+  ]
+}

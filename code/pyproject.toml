@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lensde"
+version = "0.1.0.dev0"
+description = "Deterministic optical-design workflows and reproducible benchmarks"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<2"]
+
+[project.scripts]
+lensde = "lensde.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"lensde.seeds" = ["profiles/*.json"]

@@ -1,0 +1,1790 @@
+{
+  "schema_version": 1,
+  "task": "S1",
+  "status": "evidence_mapping_not_a_complete_runtime_profile",
+  "configured_seed_options": {
+    "spot_sampling_seed": 1,
+    "adaptive_basin_active_niche_elite_seed_count": 1,
+    "adaptive_basin_active_focus_elite_seed_count": 1,
+    "refresh_seed_pool_fraction": 0,
+    "refresh_seed_pool_perturbation": 0,
+    "seed": 20260515,
+    "initial_search_seed_policy": "legacy_stage_v1",
+    "initial_search_seed_profile": "generic_v2",
+    "hammer_seed": 0,
+    "initial_search_seed_air_thickness_cap": 25,
+    "initial_search_seed_glass_thickness_cap": 2,
+    "initial_search_adaptive_seed_thickness_caps": true,
+    "initial_search_seed_ttl_allow_short": true,
+    "initial_search_seed_ttl_max_factor": 1,
+    "initial_search_seed_material_nd_cap": 0.45,
+    "initial_search_seed_material_vd_cap": 50,
+    "initial_search_seed_pool_population_multiplier": 2,
+    "initial_search_basin_active_niche_elite_seed_count": 1,
+    "initial_search_basin_active_focus_elite_seed_count": 1,
+    "initial_search_funnel_global_micro_island_seed_scale": 0.65,
+    "initial_search_funnel_global_micro_island_family_seed_limit": 24,
+    "initial_search_funnel_global_micro_island_refresh_archive_seed_limit": 24,
+    "initial_search_funnel_global_explore_full_restart_shared_seed_pool": true,
+    "initial_search_funnel_global_explore_full_restart_seed_pool_multiplier": 1.0,
+    "initial_search_explore_develop_seed_stride": 10000,
+    "initial_search_restart_seed_topology_novelty": false,
+    "initial_search_restart_seed_topology_scan_limit": 0,
+    "initial_search_refresh_seed_pool_fraction": 0,
+    "initial_search_refresh_seed_pool_perturbation": 0,
+    "initial_search_funnel_stage_seed_trace_gate": true,
+    "initial_search_funnel_stage_seed_gate_candidate_factor": 8,
+    "initial_search_funnel_stage_seed_gate_batch_factor": 1,
+    "initial_search_funnel_stage_seed_gate_final_recheck": true,
+    "initial_search_seed_trace_strategy": "anchor_sparse_refill",
+    "initial_search_seed_cap_scout_enabled": true,
+    "initial_search_seed_cap_scout_list": "0.01,0.02,0.04",
+    "initial_search_seed_cap_scout_candidates": 6144,
+    "initial_search_checkpoint_optimizer_seed": 20261729,
+    "initial_search_checkpoint_population_seed": 2026072400,
+    "initial_search_de_dls_material_chromatic_repair_seed": 20260804,
+    "initial_search_de_dls_material_bridge_seed": 20260719,
+    "initial_search_de_dls_fixed_glass_feedback_seed": 20260704,
+    "initial_search_de_dls_fixed_glass_feedback_rng_seed": 104729,
+    "initial_search_post_asphere_seed": 20260709,
+    "initial_search_post_asphere_rng_seed": 104729,
+    "initial_search_post_asphere_sampling_seed": 1,
+    "initial_search_de_dls_fixed_glass_feedback_seed_policy": "stable_candidate_identity_v1",
+    "initial_search_seed_pool_target_count": 3150
+  },
+  "initial_population_saved_seed_fields": [
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/seed_pool_target",
+      "context": "S1:stage_evidence",
+      "key": "seed_pool_target",
+      "saved_value": 3150,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/base_seed_pool_target",
+      "context": "S1:stage_evidence",
+      "key": "base_seed_pool_target",
+      "saved_value": 1260,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/seed_pool_multiplier",
+      "context": "S1:stage_evidence",
+      "key": "seed_pool_multiplier",
+      "saved_value": 2.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_shared_seed_pool_enabled",
+      "context": "S1:stage_evidence",
+      "key": "full_restart_shared_seed_pool_enabled",
+      "saved_value": true,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_shared_seed_pool_target",
+      "context": "S1:stage_evidence",
+      "key": "full_restart_shared_seed_pool_target",
+      "saved_value": 3150,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_seed_restarts",
+      "context": "S1:stage_evidence",
+      "key": "full_restart_seed_restarts",
+      "saved_value": 5,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_per_outer_seed_pool_target",
+      "context": "S1:stage_evidence",
+      "key": "full_restart_per_outer_seed_pool_target",
+      "saved_value": 630,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/full_restart_seed_pool_multiplier",
+      "context": "S1:stage_evidence",
+      "key": "full_restart_seed_pool_multiplier",
+      "saved_value": 1.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/adaptive_seed_thickness_caps",
+      "context": "S1:stage_evidence",
+      "key": "adaptive_seed_thickness_caps",
+      "saved_value": true,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/thickness_budget/seed_air_cap",
+      "context": "S1:stage_evidence",
+      "key": "seed_air_cap",
+      "saved_value": 6.4291099739998545,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/thickness_budget/seed_glass_cap",
+      "context": "S1:stage_evidence",
+      "key": "seed_glass_cap",
+      "saved_value": 2.3350685664761626,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/ttl_thickness_projection/allow_short_seed",
+      "context": "S1:stage_evidence",
+      "key": "allow_short_seed",
+      "saved_value": true,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/ttl_thickness_projection/seed_max_factor",
+      "context": "S1:stage_evidence",
+      "key": "seed_max_factor",
+      "saved_value": 1.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/ttl_thickness_projection/seed_target_lower",
+      "context": "S1:stage_evidence",
+      "key": "seed_target_lower",
+      "saved_value": 29.200000000000003,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/ttl_thickness_projection/seed_target_upper",
+      "context": "S1:stage_evidence",
+      "key": "seed_target_upper",
+      "saved_value": 58.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/seed_air_thickness_cap",
+      "context": "S1:stage_evidence",
+      "key": "seed_air_thickness_cap",
+      "saved_value": 6.4291099739998545,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "json_pointer": "/seed_glass_thickness_cap",
+      "context": "S1:stage_evidence",
+      "key": "seed_glass_thickness_cap",
+      "saved_value": 2.3350685664761626,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\cap_production_summary.json",
+      "json_pointer": "/stages/0/seed_budget_feasible_count",
+      "context": "S1:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 2128,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\cap_scout_summary.json",
+      "json_pointer": "/stages/0/seed_budget_feasible_count",
+      "context": "S1:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 510,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\cap_scout_summary.json",
+      "json_pointer": "/stages/1/seed_budget_feasible_count",
+      "context": "S1:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 510,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\cap_scout_summary.json",
+      "json_pointer": "/stages/2/seed_budget_feasible_count",
+      "context": "S1:stage_evidence",
+      "key": "seed_budget_feasible_count",
+      "saved_value": 500,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\selection_summary.json",
+      "json_pointer": "/selected_seed_population_write_seconds",
+      "context": "S1:stage_evidence",
+      "key": "selected_seed_population_write_seconds",
+      "saved_value": 0.06307125091552734,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/ttl_thickness_projection/allow_short_seed",
+      "context": "S1:stage_evidence",
+      "key": "allow_short_seed",
+      "saved_value": true,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/ttl_thickness_projection/seed_max_factor",
+      "context": "S1:stage_evidence",
+      "key": "seed_max_factor",
+      "saved_value": 1.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/ttl_thickness_projection/seed_target_lower",
+      "context": "S1:stage_evidence",
+      "key": "seed_target_lower",
+      "saved_value": 29.200000000000003,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    },
+    {
+      "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "json_pointer": "/ttl_thickness_projection/seed_target_upper",
+      "context": "S1:stage_evidence",
+      "key": "seed_target_upper",
+      "saved_value": 58.0,
+      "interpretation": "saved field; not independently verified as an RNG invocation"
+    }
+  ],
+  "command_seed_plans": [
+    {
+      "command_id": "71df41c279daa813a409c1cd3428480457c0b3d7e2e86c8ae5a2c041d862dc06",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/0/command",
+          "context": "S1",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/0/command",
+          "context": "S1",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/0/command",
+          "context": "S1",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/0/command",
+          "context": "S1",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/0/command",
+          "context": "S1",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/0/command",
+          "context": "S1",
+          "name": "cap_scout_0.01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "2668cb0841dd49211718c148f9f33412e03cf1cdb56bd59dccd929eaaadcfb5b",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/1/command",
+          "context": "S1",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/1/command",
+          "context": "S1",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/1/command",
+          "context": "S1",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/1/command",
+          "context": "S1",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/1/command",
+          "context": "S1",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/1/command",
+          "context": "S1",
+          "name": "cap_scout_0.02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "791ff2fece28654dac29d0c0a50ec2d8bdc7f732e762e3245c7cfcab972fe54d",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/2/command",
+          "context": "S1",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/2/command",
+          "context": "S1",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/2/command",
+          "context": "S1",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/2/command",
+          "context": "S1",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/2/command",
+          "context": "S1",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/2/command",
+          "context": "S1",
+          "name": "cap_scout_0.04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "964fa54acc28effe69f37f211b38253fe6af83143e29e6f9c06f59d0a51db9ef",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/3/command",
+          "context": "S1",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/3/command",
+          "context": "S1",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/3/command",
+          "context": "S1",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/3/command",
+          "context": "S1",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/3/command",
+          "context": "S1",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/3/command",
+          "context": "S1",
+          "name": "cap_production_00",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "5deb705fbce83b1f18fa680e92666fe364fcd7fa08d523c65932aec6e8b9d20f",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20261524",
+          "integer_value": 20261524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/4/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/4/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/4/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/4/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/4/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/4/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_01",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "da6d21654774751c26f8f5a456f0554cfc75b2f6340c90c5ec587d668a041468",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20271524",
+          "integer_value": 20271524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/5/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/5/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/5/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/5/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/5/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/5/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_02",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "f131ef262a99dd57da31bc7669c17e51b4f2e373e34628f3fea4bb4df5e58586",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20281524",
+          "integer_value": 20281524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/6/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/6/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/6/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/6/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/6/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/6/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_03",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "631f3f7a498c2c3601a0fb3fdec818304edb22978f64effa4de670d9799fbcfb",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20291524",
+          "integer_value": 20291524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/7/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/7/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/7/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/7/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/7/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/7/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_04",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "7ea3f044b5945648b19113cbdebf6835e8790c4272fee9a7e76413d65e55d05e",
+      "argv_seed_flags": [
+        {
+          "flag": "--sampling-seed",
+          "argv_index": 17,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--spot-sampling-seed",
+          "argv_index": 25,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--seed",
+          "argv_index": 50,
+          "raw_value": "20301524",
+          "integer_value": 20301524
+        },
+        {
+          "flag": "--basin-active-niche-elite-seed-count",
+          "argv_index": 176,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--basin-active-focus-elite-seed-count",
+          "argv_index": 186,
+          "raw_value": "1",
+          "integer_value": 1
+        },
+        {
+          "flag": "--refresh-seed-pool-fraction",
+          "argv_index": 296,
+          "raw_value": "0.0",
+          "integer_value": null
+        },
+        {
+          "flag": "--refresh-seed-pool-perturbation",
+          "argv_index": 298,
+          "raw_value": "0.0",
+          "integer_value": null
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/8/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/8/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/8/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/8/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/8/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/8/command",
+          "context": "S1",
+          "name": "funnel_global_explore_outer_05",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "e1e8629ac1e7cb43274a8e2e7dde2958400a4bb6255b45af954da211f124be32",
+      "argv_seed_flags": [
+        {
+          "flag": "--checkpoint-optimizer-seed",
+          "argv_index": 32,
+          "raw_value": "20261729",
+          "integer_value": 20261729
+        },
+        {
+          "flag": "--checkpoint-population-seed",
+          "argv_index": 34,
+          "raw_value": "2026072400",
+          "integer_value": 2026072400
+        },
+        {
+          "flag": "--material-chromatic-repair-seed",
+          "argv_index": 69,
+          "raw_value": "20260804",
+          "integer_value": 20260804
+        },
+        {
+          "flag": "--material-bridge-seed",
+          "argv_index": 161,
+          "raw_value": "20260719",
+          "integer_value": 20260719
+        },
+        {
+          "flag": "--fixed-glass-feedback-seed",
+          "argv_index": 303,
+          "raw_value": "20260704",
+          "integer_value": 20260704
+        },
+        {
+          "flag": "--fixed-glass-feedback-rng-seed",
+          "argv_index": 305,
+          "raw_value": "104729",
+          "integer_value": 104729
+        },
+        {
+          "flag": "--fixed-glass-feedback-seed-policy",
+          "argv_index": 307,
+          "raw_value": "stable_candidate_identity_v1",
+          "integer_value": null
+        },
+        {
+          "flag": "--master-seed",
+          "argv_index": 309,
+          "raw_value": "20260515",
+          "integer_value": 20260515
+        },
+        {
+          "flag": "--seed-profile",
+          "argv_index": 311,
+          "raw_value": "generic_v2",
+          "integer_value": null
+        },
+        {
+          "flag": "--glass-scout-seed",
+          "argv_index": 313,
+          "raw_value": "20260726",
+          "integer_value": 20260726
+        },
+        {
+          "flag": "--glass-scout-rng-seed",
+          "argv_index": 315,
+          "raw_value": "104729",
+          "integer_value": 104729
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+          "json_pointer": "/stages/9/command",
+          "context": "S1",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": null,
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/run_meta/stages/9/command",
+          "context": "S1",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/stages/9/command",
+          "context": "S1",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+          "json_pointer": "/input_files/D:\\PycharmProjects\\Optiland\\s1e1028b\\run_meta.json/summary/stages/9/command",
+          "context": "S1",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/run_meta_without_options/stages/9/command",
+          "context": "S1",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        },
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+          "json_pointer": "/stages/9/command",
+          "context": "S1",
+          "name": "de_dls_material_funnel",
+          "direct_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "parent_status": {
+            "returncode": 0,
+            "timed_out": false
+          },
+          "evidence_class": "saved_success_record; not rerun_in_this_extraction"
+        }
+      ]
+    },
+    {
+      "command_id": "d131b6cd841f5047b3c19373995db7d1f3ed05e27e803c29dfd7ea398c0c33c6",
+      "argv_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1300037670",
+          "integer_value": 1300037670
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\command.json",
+          "json_pointer": "",
+          "context": "S1:stage_evidence",
+          "name": null,
+          "direct_status": {},
+          "parent_status": null,
+          "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+        }
+      ]
+    },
+    {
+      "command_id": "cc1aa3bf89e02dee51a8bda335345be2a014e60f81a1f9b2e21245d6d8b3ad5d",
+      "argv_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1984286781",
+          "integer_value": 1984286781
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\command.json",
+          "json_pointer": "",
+          "context": "S1:stage_evidence",
+          "name": null,
+          "direct_status": {},
+          "parent_status": null,
+          "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+        }
+      ]
+    },
+    {
+      "command_id": "4588049706c05bb2c8dce0310738fdc150d3523b1f938eb5148197b046970cb4",
+      "argv_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "197586226",
+          "integer_value": 197586226
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\command.json",
+          "json_pointer": "",
+          "context": "S1:stage_evidence",
+          "name": null,
+          "direct_status": {},
+          "parent_status": null,
+          "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+        }
+      ]
+    },
+    {
+      "command_id": "f8205406558a649674e1d45d62c56c9e3473b102d5ebaa210ce46acfa73cc1a2",
+      "argv_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1084365993",
+          "integer_value": 1084365993
+        }
+      ],
+      "observations": [
+        {
+          "source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\command.json",
+          "json_pointer": "",
+          "context": "S1:stage_evidence",
+          "name": null,
+          "direct_status": {},
+          "parent_status": null,
+          "evidence_class": "saved_command_only; execution_not_established_by_this_record"
+        }
+      ]
+    }
+  ],
+  "fixed_material_candidate_mapping": [
+    {
+      "candidate_archive_id": "repair_001_rank_0001",
+      "summary_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\summary.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_001_rank_0001/summary.json",
+        "bytes": 2745,
+        "sha256": "ac45b746bd97ad7c8f053efdb057613917f99eb6a4e1b37804689a88c7b6c7bc"
+      },
+      "saved_values": {
+        "cycle": 1,
+        "source_rank": 4,
+        "source": "run",
+        "source_dir": "D:\\PycharmProjects\\Optiland\\s1e1028b\\_de\\glass_scout\\islands\\c01r0002\\run",
+        "out_dir": "D:\\PycharmProjects\\Optiland\\s1e1028b\\_de\\locked_de\\rfn\\04_run\\locked_g_6b9edeac476f\\run",
+        "seed_policy": "stable_candidate_identity_v1",
+        "seed_key": "sha256:ae0d85a57332f437a410c86c4c30dd43c7991790ca40b231a6f430f2d9c045fd",
+        "optimizer_seed_base": 20260704,
+        "population_seed_base": 104729,
+        "optimizer_seed": 1300037670,
+        "population_seed": 753819721,
+        "returncode": 0,
+        "timed_out": false,
+        "materialization_valid": true,
+        "multi_island_cohort_id": "cohort_01"
+      },
+      "command_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\command.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_001_rank_0001/command.json",
+        "bytes": 2873,
+        "sha256": "e4a2d233c8f91103c4fa787a91903c3c63b1e5f48da3effff8ff64d93471e8c6"
+      },
+      "command_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1300037670",
+          "integer_value": 1300037670
+        }
+      ],
+      "identity_policy": "exact recorded candidate mapping; no hash or seed recomputation"
+    },
+    {
+      "candidate_archive_id": "repair_002_rank_0002",
+      "summary_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\summary.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_002_rank_0002/summary.json",
+        "bytes": 2761,
+        "sha256": "a163b37a57741e1c4a018275189996886e2fb3cfd8ee6aa1d3764ada01bde41d"
+      },
+      "saved_values": {
+        "cycle": 1,
+        "source_rank": 1,
+        "source": "run",
+        "source_dir": "D:\\PycharmProjects\\Optiland\\s1e1028b\\_de\\glass_scout\\islands\\c03r0003\\run",
+        "out_dir": "D:\\PycharmProjects\\Optiland\\s1e1028b\\_de\\locked_de\\rfn\\01_run\\locked_g_6b9edeac476f\\run",
+        "seed_policy": "stable_candidate_identity_v1",
+        "seed_key": "sha256:a6b4c92ee5dac4c29d86eee492794710b18e495ebbef3a2596f37853fde1c115",
+        "optimizer_seed_base": 20260704,
+        "population_seed_base": 104729,
+        "optimizer_seed": 1984286781,
+        "population_seed": 552690339,
+        "returncode": 0,
+        "timed_out": false,
+        "materialization_valid": true,
+        "multi_island_cohort_id": "cohort_01"
+      },
+      "command_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\command.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_002_rank_0002/command.json",
+        "bytes": 2873,
+        "sha256": "b7b1e97b3f1e1357563a84c8a9a41cb3f80a71b347815bcbbd4197de9f226b9a"
+      },
+      "command_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1984286781",
+          "integer_value": 1984286781
+        }
+      ],
+      "identity_policy": "exact recorded candidate mapping; no hash or seed recomputation"
+    },
+    {
+      "candidate_archive_id": "repair_003_rank_0003",
+      "summary_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\summary.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_003_rank_0003/summary.json",
+        "bytes": 2757,
+        "sha256": "187d547a73045041a8255a0051b0379e08dce896e4113bf02237953bf4b4bdec"
+      },
+      "saved_values": {
+        "cycle": 1,
+        "source_rank": 2,
+        "source": "run",
+        "source_dir": "D:\\PycharmProjects\\Optiland\\s1e1028b\\_de\\glass_scout\\islands\\c02r0001\\run",
+        "out_dir": "D:\\PycharmProjects\\Optiland\\s1e1028b\\_de\\locked_de\\rfn\\02_run\\locked_g_6b9edeac476f\\run",
+        "seed_policy": "stable_candidate_identity_v1",
+        "seed_key": "sha256:ee54d32084e909e76a1f4ab8571d6925459488364b823132f6d60fe7477a4ccd",
+        "optimizer_seed_base": 20260704,
+        "population_seed_base": 104729,
+        "optimizer_seed": 197586226,
+        "population_seed": 700007077,
+        "returncode": 0,
+        "timed_out": false,
+        "materialization_valid": true,
+        "multi_island_cohort_id": "cohort_01"
+      },
+      "command_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\command.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_003_rank_0003/command.json",
+        "bytes": 2872,
+        "sha256": "1f20e8517232815ef379bfa66576ddfbfe977a3e94815313b4cca74e19019af9"
+      },
+      "command_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "197586226",
+          "integer_value": 197586226
+        }
+      ],
+      "identity_policy": "exact recorded candidate mapping; no hash or seed recomputation"
+    },
+    {
+      "candidate_archive_id": "repair_004_rank_0004",
+      "summary_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\summary.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_004_rank_0004/summary.json",
+        "bytes": 2749,
+        "sha256": "f550064a61d65511f376fbb9614a8841d047d173f167a4d2f78df514cda09a9c"
+      },
+      "saved_values": {
+        "cycle": 1,
+        "source_rank": 3,
+        "source": "run",
+        "source_dir": "D:\\PycharmProjects\\Optiland\\s1e1028b\\_de\\glass_scout\\islands\\c04r0004\\run",
+        "out_dir": "D:\\PycharmProjects\\Optiland\\s1e1028b\\_de\\locked_de\\rfn\\03_run\\locked_g_6b9edeac476f\\run",
+        "seed_policy": "stable_candidate_identity_v1",
+        "seed_key": "sha256:6454a06d26468d2f7c22167af5c3db5cb00496ff89a41c619ae6f99e4d3046ab",
+        "optimizer_seed_base": 20260704,
+        "population_seed_base": 104729,
+        "optimizer_seed": 1084365993,
+        "population_seed": 1406349830,
+        "returncode": 0,
+        "timed_out": false,
+        "materialization_valid": true,
+        "multi_island_cohort_id": "cohort_01"
+      },
+      "command_source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\command.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_004_rank_0004/command.json",
+        "bytes": 2873,
+        "sha256": "893f9186b278d0219ceffc0448f380ffa70467f4c6283fa091f6ef59b59bf3ac"
+      },
+      "command_seed_flags": [
+        {
+          "flag": "--seed",
+          "argv_index": 47,
+          "raw_value": "1084365993",
+          "integer_value": 1084365993
+        }
+      ],
+      "identity_policy": "exact recorded candidate mapping; no hash or seed recomputation"
+    }
+  ],
+  "unresolved": [
+    "Every Python/native RNG invocation and consumption order is not yet traced.",
+    "This exact saved-candidate mapping does not define seeds for unseen candidates.",
+    "Root configured bases may differ from actual per-stage bases; saved candidate bases take precedence as evidence."
+  ]
+}

@@ -1,0 +1,3 @@
+# Tested source-checkout dependencies. Optimization itself is C++/CUDA.
+numpy==1.24.3
+setuptools==65.5.0

@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "task": "S1",
+      "catalog": "benchmarks/S1/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1302,
+      "unique_recorded_commands": 14,
+      "recorded_seed_flag_occurrences": 58,
+      "seed_profile_in_handoff": null,
+      "production_launch_supported": false
+    },
+    {
+      "task": "S2",
+      "catalog": "benchmarks/S2/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1299,
+      "unique_recorded_commands": 15,
+      "recorded_seed_flag_occurrences": 56,
+      "seed_profile_in_handoff": null,
+      "production_launch_supported": false
+    },
+    {
+      "task": "S3",
+      "catalog": "benchmarks/S3/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1299,
+      "unique_recorded_commands": 15,
+      "recorded_seed_flag_occurrences": 56,
+      "seed_profile_in_handoff": null,
+      "production_launch_supported": false
+    },
+    {
+      "task": "S4",
+      "catalog": "benchmarks/S4/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1299,
+      "unique_recorded_commands": 19,
+      "recorded_seed_flag_occurrences": 64,
+      "seed_profile_in_handoff": null,
+      "production_launch_supported": false
+    },
+    {
+      "task": "6A",
+      "catalog": "benchmarks/6A/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1303,
+      "unique_recorded_commands": 42,
+      "recorded_seed_flag_occurrences": 131,
+      "seed_profile_in_handoff": "6A_formal_20260929",
+      "production_launch_supported": false
+    },
+    {
+      "task": "A1",
+      "catalog": "benchmarks/A1/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1301,
+      "unique_recorded_commands": 26,
+      "recorded_seed_flag_occurrences": 80,
+      "seed_profile_in_handoff": "9A1_formal_20260929",
+      "production_launch_supported": false
+    },
+    {
+      "task": "A2",
+      "catalog": "benchmarks/A2/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1300,
+      "unique_recorded_commands": 88,
+      "recorded_seed_flag_occurrences": 129,
+      "seed_profile_in_handoff": "9A2_formal_20260929",
+      "production_launch_supported": false
+    },
+    {
+      "task": "A3",
+      "catalog": "benchmarks/A3/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1300,
+      "unique_recorded_commands": 160,
+      "recorded_seed_flag_occurrences": 127,
+      "seed_profile_in_handoff": "9A3_formal_20260929",
+      "production_launch_supported": false
+    },
+    {
+      "task": "A4",
+      "catalog": "benchmarks/A4/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1300,
+      "unique_recorded_commands": 84,
+      "recorded_seed_flag_occurrences": 129,
+      "seed_profile_in_handoff": "9A4_formal_20260928",
+      "production_launch_supported": false
+    },
+    {
+      "task": "DF1",
+      "catalog": "benchmarks/DF1/catalog.json",
+      "copied_core_inputs": 3,
+      "saved_option_count": 1301,
+      "unique_recorded_commands": 63,
+      "recorded_seed_flag_occurrences": 135,
+      "seed_profile_in_handoff": "GGPGPPPP_formal_20261004",
+      "production_launch_supported": false
+    }
+  ]
+}

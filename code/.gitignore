@@ -1,0 +1,16 @@
+__pycache__/
+.venv/
+*.pyc
+.pytest_cache/
+.baseline/
+.validation/
+native/build/
+build/
+work/
+w/
+exports/
+dist/
+*.egg-info/
+
+# Local database generated from the published AGF catalogs.
+/catalogs/database/

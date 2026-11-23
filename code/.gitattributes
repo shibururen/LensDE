@@ -1,0 +1,5 @@
+benchmarks/** -text
+docs/experiment_catalog_manifest.json -text
+src/lensde/seeds/profiles/** -text
+catalogs/*.AGF -text
+catalogs/database/** -text

@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "task": "S1",
+  "status": "phase0_archival_configuration",
+  "production_launch_supported": false,
+  "formal_root_provenance": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2",
+  "baseline_record": {
+    "task": "S1",
+    "formal_root": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2",
+    "provenance_index": "D:\\PycharmProjects\\Optiland\\manuscript_revision_20261029\\s1_principal_operands_20261103\\verification.json",
+    "input_files": {
+      "system_input.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\system_input.json",
+        "bytes": 22598,
+        "sha256": "7261a19bf786978773b8c3edfc15e564bff2888dfffe7f1c58568347dd0813e8"
+      },
+      "variables.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\variables.json",
+        "bytes": 12419,
+        "sha256": "261b369bdb79e3a60e9d548348b9b3a4489f416d49044089ec162714de0841a3"
+      },
+      "merit.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\merit.json",
+        "bytes": 231160,
+        "sha256": "b76ec6ddb48b01b37d96735390bdc218ee7ecff788bd585cbd752c6231458080"
+      }
+    },
+    "archival_metadata": {
+      "effective_repro_settings.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+        "bytes": 892306,
+        "sha256": "81d126ac17d395f665a2fdc87d73afacd034c9f90f5b2a108d538bbe164c0f77"
+      },
+      "repro_manifest.json": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+        "bytes": 8689722,
+        "sha256": "59d0cf6f34ec6e4d4eddb0d32123f62b7e7a88ce457098cdc0c103f789b5cbc7"
+      }
+    },
+    "baseline_role": "Saved inputs/reference records, not a newly completed reproduction.",
+    "options_source": {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+      "bytes": 254610,
+      "sha256": "77a97fabc868675479daaabe1c4912d2e9a1a9cf2f5c62ff883f691bc466a2e1"
+    },
+    "saved_seed_options": {
+      "spot_sampling_seed": 1,
+      "adaptive_basin_active_niche_elite_seed_count": 1,
+      "adaptive_basin_active_focus_elite_seed_count": 1,
+      "refresh_seed_pool_fraction": 0,
+      "refresh_seed_pool_perturbation": 0,
+      "seed": 20260515,
+      "initial_search_seed_policy": "legacy_stage_v1",
+      "initial_search_seed_profile": "generic_v2",
+      "hammer_seed": 0,
+      "initial_search_seed_air_thickness_cap": 25,
+      "initial_search_seed_glass_thickness_cap": 2,
+      "initial_search_adaptive_seed_thickness_caps": true,
+      "initial_search_seed_ttl_allow_short": true,
+      "initial_search_seed_ttl_max_factor": 1,
+      "initial_search_seed_material_nd_cap": 0.45,
+      "initial_search_seed_material_vd_cap": 50,
+      "initial_search_seed_pool_population_multiplier": 2,
+      "initial_search_basin_active_niche_elite_seed_count": 1,
+      "initial_search_basin_active_focus_elite_seed_count": 1,
+      "initial_search_funnel_global_micro_island_seed_scale": 0.65,
+      "initial_search_funnel_global_micro_island_family_seed_limit": 24,
+      "initial_search_funnel_global_micro_island_refresh_archive_seed_limit": 24,
+      "initial_search_funnel_global_explore_full_restart_shared_seed_pool": true,
+      "initial_search_funnel_global_explore_full_restart_seed_pool_multiplier": 1.0,
+      "initial_search_explore_develop_seed_stride": 10000,
+      "initial_search_restart_seed_topology_novelty": false,
+      "initial_search_restart_seed_topology_scan_limit": 0,
+      "initial_search_refresh_seed_pool_fraction": 0,
+      "initial_search_refresh_seed_pool_perturbation": 0,
+      "initial_search_funnel_stage_seed_trace_gate": true,
+      "initial_search_funnel_stage_seed_gate_candidate_factor": 8,
+      "initial_search_funnel_stage_seed_gate_batch_factor": 1,
+      "initial_search_funnel_stage_seed_gate_final_recheck": true,
+      "initial_search_seed_trace_strategy": "anchor_sparse_refill",
+      "initial_search_seed_cap_scout_enabled": true,
+      "initial_search_seed_cap_scout_list": "0.01,0.02,0.04",
+      "initial_search_seed_cap_scout_candidates": 6144,
+      "initial_search_checkpoint_optimizer_seed": 20261729,
+      "initial_search_checkpoint_population_seed": 2026072400,
+      "initial_search_de_dls_material_chromatic_repair_seed": 20260804,
+      "initial_search_de_dls_material_bridge_seed": 20260719,
+      "initial_search_de_dls_fixed_glass_feedback_seed": 20260704,
+      "initial_search_de_dls_fixed_glass_feedback_rng_seed": 104729,
+      "initial_search_post_asphere_seed": 20260709,
+      "initial_search_post_asphere_rng_seed": 104729,
+      "initial_search_post_asphere_sampling_seed": 1,
+      "initial_search_de_dls_fixed_glass_feedback_seed_policy": "stable_candidate_identity_v1",
+      "initial_search_seed_pool_target_count": 3150
+    },
+    "selected_saved_options": {
+      "initial_search_flow": "legacy",
+      "initial_search_front_profile": "weak",
+      "initial_search_wide_front_groups": 1,
+      "initial_search_seed_policy": "legacy_stage_v1",
+      "initial_search_seed_profile": "generic_v2",
+      "initial_search_run_profile": "custom",
+      "initial_search_post_asphere_flow": "single_mother",
+      "initial_search_post_asphere_enabled": false,
+      "initial_search_population_generation_mode": "restricted_perturbation",
+      "initial_search_seed_trace_strategy": "anchor_sparse_refill"
+    },
+    "numeric_seed_profile": null,
+    "numeric_seed_profile_status": "No dedicated spherical formal profile in current seed_profiles; derive from actual saved stage seeds.",
+    "reference_identity_row": {
+      "task": "S1",
+      "native_score_source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\final_locked_glass_dls_topologies\\tail_001_rank_0001\\score.json",
+      "native_system_source": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\final_locked_glass_dls_topologies\\tail_001_rank_0001\\system.json",
+      "native_score_sha256": "a4b542548e466e195c372855fb911fe564d17da34f4f028910489e4dbc5c6eb3",
+      "native_system_sha256": "476dd7c53bb5a1897be8dcec4e15a8325dd15c1e65b2719ac74d1752cf271bf3",
+      "published_file": "D:\\PycharmProjects\\Optiland\\publication_designs_20261030\\S1_C1.zmx",
+      "published_sha256": "ff1c8596289391409e584a0d5f4766bc305e1669ec657e2cb090484f0b828040",
+      "max_geometry_and_polynomial_parameter_difference": "1.4210854715202004e-14",
+      "materials_and_stop_match": "True",
+      "native_field_count": "5",
+      "published_reporting_field_count": "5",
+      "note": "Native and Zemax field/pupil/aperture representations are intentionally distinguished"
+    },
+    "reference_files": {
+      "score": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\final_locked_glass_dls_topologies\\tail_001_rank_0001\\score.json",
+        "bytes": 70054,
+        "sha256": "a4b542548e466e195c372855fb911fe564d17da34f4f028910489e4dbc5c6eb3",
+        "matches_previous_index": true
+      },
+      "system": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\final_locked_glass_dls_topologies\\tail_001_rank_0001\\system.json",
+        "bytes": 17400,
+        "sha256": "476dd7c53bb5a1897be8dcec4e15a8325dd15c1e65b2719ac74d1752cf271bf3",
+        "matches_previous_index": true
+      }
+    },
+    "saved_reference_native_mfv": 8.76567219533,
+    "saved_population_locations": [
+      "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_population.csv",
+      "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\population.csv"
+    ],
+    "coverage_for_validation": {
+      "seed_schedule": "required",
+      "population_equivalence": "required",
+      "same_condition_short_iteration_equivalence": "required",
+      "complete_end_to_end_run": "not required for acceptance per user"
+    }
+  },
+  "inputs": {
+    "system_input.json": {
+      "source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\system_input.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/system_input.json",
+        "bytes": 22598,
+        "sha256": "7261a19bf786978773b8c3edfc15e564bff2888dfffe7f1c58568347dd0813e8",
+        "expected_sha256": "7261a19bf786978773b8c3edfc15e564bff2888dfffe7f1c58568347dd0813e8",
+        "matches_expected": true
+      },
+      "snapshot": {
+        "path": "benchmarks/S1/inputs/system_input.json",
+        "bytes": 22598,
+        "sha256": "7261a19bf786978773b8c3edfc15e564bff2888dfffe7f1c58568347dd0813e8"
+      },
+      "copy_method": "independent byte copy"
+    },
+    "variables.json": {
+      "source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\variables.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/variables.json",
+        "bytes": 12419,
+        "sha256": "261b369bdb79e3a60e9d548348b9b3a4489f416d49044089ec162714de0841a3",
+        "expected_sha256": "261b369bdb79e3a60e9d548348b9b3a4489f416d49044089ec162714de0841a3",
+        "matches_expected": true
+      },
+      "snapshot": {
+        "path": "benchmarks/S1/inputs/variables.json",
+        "bytes": 12419,
+        "sha256": "261b369bdb79e3a60e9d548348b9b3a4489f416d49044089ec162714de0841a3"
+      },
+      "copy_method": "independent byte copy"
+    },
+    "merit.json": {
+      "source": {
+        "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\merit.json",
+        "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/merit.json",
+        "bytes": 231160,
+        "sha256": "b76ec6ddb48b01b37d96735390bdc218ee7ecff788bd585cbd752c6231458080",
+        "expected_sha256": "b76ec6ddb48b01b37d96735390bdc218ee7ecff788bd585cbd752c6231458080",
+        "matches_expected": true
+      },
+      "snapshot": {
+        "path": "benchmarks/S1/inputs/merit.json",
+        "bytes": 231160,
+        "sha256": "b76ec6ddb48b01b37d96735390bdc218ee7ecff788bd585cbd752c6231458080"
+      },
+      "copy_method": "independent byte copy"
+    }
+  },
+  "options": {
+    "path": "benchmarks/S1/options.saved.json",
+    "bytes": 73109,
+    "sha256": "b7096d6a38494f6af6a433ce1cdaddeb1c8dd23cba47f2f239727eec58bfbaec"
+  },
+  "project_snapshot": {
+    "path": "benchmarks/S1/project.saved.json",
+    "bytes": 353691,
+    "sha256": "46c71d61a8994f1c708f720a92133d0434263b2a0ce2d8610985dba5ae75075f"
+  },
+  "source_documents": [
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\run_meta.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/run_meta.json",
+      "bytes": 254610,
+      "sha256": "77a97fabc868675479daaabe1c4912d2e9a1a9cf2f5c62ff883f691bc466a2e1"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\repro_manifest.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/repro_manifest.json",
+      "bytes": 8689722,
+      "sha256": "59d0cf6f34ec6e4d4eddb0d32123f62b7e7a88ce457098cdc0c103f789b5cbc7"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\effective_repro_settings.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/effective_repro_settings.json",
+      "bytes": 892306,
+      "sha256": "81d126ac17d395f665a2fdc87d73afacd034c9f90f5b2a108d538bbe164c0f77"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\funnel_global_explore_full_restart_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/funnel_global_explore_full_restart_summary.json",
+      "bytes": 3995,
+      "sha256": "651aceed97da6442e1ed6a65a2d870afa150bb55d1f04ba2aad46274d4879f14"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_material_funnel_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_material_funnel_summary.json",
+      "bytes": 33013,
+      "sha256": "88d6c1d7106874c340584f4bfa868849f56d8c353e5911d77e524da310ad0886"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_material_stages.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_material_stages.json",
+      "bytes": 3660,
+      "sha256": "7018a8c20dc9daed46aced8201952b58ad69816ef85e9d265392d934d84b2bd3"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\command.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_001_rank_0001/command.json",
+      "bytes": 2873,
+      "sha256": "e4a2d233c8f91103c4fa787a91903c3c63b1e5f48da3effff8ff64d93471e8c6"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_001_rank_0001\\summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_001_rank_0001/summary.json",
+      "bytes": 2745,
+      "sha256": "ac45b746bd97ad7c8f053efdb057613917f99eb6a4e1b37804689a88c7b6c7bc"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\command.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_002_rank_0002/command.json",
+      "bytes": 2873,
+      "sha256": "b7b1e97b3f1e1357563a84c8a9a41cb3f80a71b347815bcbbd4197de9f226b9a"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_002_rank_0002\\summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_002_rank_0002/summary.json",
+      "bytes": 2761,
+      "sha256": "a163b37a57741e1c4a018275189996886e2fb3cfd8ee6aa1d3764ada01bde41d"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\command.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_003_rank_0003/command.json",
+      "bytes": 2872,
+      "sha256": "1f20e8517232815ef379bfa66576ddfbfe977a3e94815313b4cca74e19019af9"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_003_rank_0003\\summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_003_rank_0003/summary.json",
+      "bytes": 2757,
+      "sha256": "187d547a73045041a8255a0051b0379e08dce896e4113bf02237953bf4b4bdec"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\command.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_004_rank_0004/command.json",
+      "bytes": 2873,
+      "sha256": "893f9186b278d0219ceffc0448f380ffa70467f4c6283fa091f6ef59b59bf3ac"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\fixed_glass_feedback_repairs\\repair_004_rank_0004\\summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/fixed_glass_feedback_repairs/repair_004_rank_0004/summary.json",
+      "bytes": 2749,
+      "sha256": "f550064a61d65511f376fbb9614a8841d047d173f167a4d2f78df514cda09a9c"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\summaries\\layer1_checkpoint_de_config.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/summaries/layer1_checkpoint_de_config.json",
+      "bytes": 7009,
+      "sha256": "b30899591c66a4f5ea26921a4032c90b154c9ee037ff6dd3321b6bc1339a9f3c"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\summaries\\layer1_checkpoint_de_results.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/summaries/layer1_checkpoint_de_results.json",
+      "bytes": 55661,
+      "sha256": "ac1924958d463b9db5d0bf5ad7dd2095d130706e6b8d4f1567ffe27ca100d418"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\summaries\\layer1_checkpoint_rank1_reference_manifest.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/summaries/layer1_checkpoint_rank1_reference_manifest.json",
+      "bytes": 10449,
+      "sha256": "9008690614a49c97cb166d4bbce941ec04231a523f86d0bda34e103cf3f116c1"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\summaries\\layer1_checkpoint_run_manifest.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/summaries/layer1_checkpoint_run_manifest.json",
+      "bytes": 181114,
+      "sha256": "b6849c112e3206c9302c8ab1807f5109941930bd38a729e72179409fa53b3a0d"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\summaries\\layer2_final_locked_glass_dls_config.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/summaries/layer2_final_locked_glass_dls_config.json",
+      "bytes": 1266,
+      "sha256": "bdb639122f7406c7c9972aa1faa01a465aac16da3418a135665f8bdd7cb7e0c9"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\summaries\\layer2_fixed_glass_feedback_config.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/summaries/layer2_fixed_glass_feedback_config.json",
+      "bytes": 2462,
+      "sha256": "b9f0d246a4aef9053eb0523db4085186314f0c76eb8a9f509439e18034d2f89b"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\de_dls_key_outputs\\summaries\\two_layer_funnel_config.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/de_dls_key_outputs/summaries/two_layer_funnel_config.json",
+      "bytes": 39927,
+      "sha256": "413295d9712cdfb7da86ddbd63a056f08e0a9e9a91e51398c33768cab68e2841"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\adaptive_targets.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/adaptive_targets.json",
+      "bytes": 3762,
+      "sha256": "58d953d28349fdc620e359d94f90b9e1371354e41b2edf207d957f89e242764c"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\anchor_acquisition_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/anchor_acquisition_summary.json",
+      "bytes": 234,
+      "sha256": "47f32f9f5c5354d3cbb763a2a56b8f830de5427fb9bcc89b3f7488785c993fc7"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\anchor_cloud_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/anchor_cloud_summary.json",
+      "bytes": 811,
+      "sha256": "875c2459a599fe53e9df75cd9c6c02922ad2ae1a5a99e96df70aeca451411105"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\cap_production_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/cap_production_summary.json",
+      "bytes": 1902,
+      "sha256": "4c7f082d57454b86e50c0a0bbf1d7075361ec01d3b59c10d187697c91efe8e9f"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\cap_scout_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/cap_scout_summary.json",
+      "bytes": 3937,
+      "sha256": "2f83ca5e6ff00165dbc6bf8ab48ad4f18e431756b584dd93fbf8d575facc33c8"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\final_asphere_profile_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/final_asphere_profile_summary.json",
+      "bytes": 219,
+      "sha256": "61fd7b3cf80ee977026bc4a59608d3aa930d99d6ef9811bfd06b15fa7671ecf5"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\final_diversity_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/final_diversity_summary.json",
+      "bytes": 48586,
+      "sha256": "4cdd1e3afc5e0f4b4d3af8043a7897a0b57485366d7983d7311df4fdcfaf26a0"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\final_recheck_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/final_recheck_summary.json",
+      "bytes": 158,
+      "sha256": "f1e0c02d1f25828237bfe1ca6a9f2bbaa353a0135f811a3b0714120e4a509dfd"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\selection_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/selection_summary.json",
+      "bytes": 2724,
+      "sha256": "1533a53fb04248be412960a8f03a4fbd9219be754a7a3b72e1e93f0345390466"
+    },
+    {
+      "path": "D:\\PycharmProjects\\Optiland\\optiland_cpp\\gui\\work\\formal_new\\S1_11P_1028_edge_air_v2\\hybrid_initial\\seed_trace_gate_v2\\sparse_refill_summary.json",
+      "workspace_relative": "optiland_cpp/gui/work/formal_new/S1_11P_1028_edge_air_v2/hybrid_initial/seed_trace_gate_v2/sparse_refill_summary.json",
+      "bytes": 105786,
+      "sha256": "5f63d21aefcb2de91965a3d87e2b258927d8cf3a2301df317b969bdeafbade2a"
+    }
+  ],
+  "saved_seed_options": {
+    "spot_sampling_seed": 1,
+    "adaptive_basin_active_niche_elite_seed_count": 1,
+    "adaptive_basin_active_focus_elite_seed_count": 1,
+    "refresh_seed_pool_fraction": 0,
+    "refresh_seed_pool_perturbation": 0,
+    "seed": 20260515,
+    "initial_search_seed_policy": "legacy_stage_v1",
+    "initial_search_seed_profile": "generic_v2",
+    "hammer_seed": 0,
+    "initial_search_seed_air_thickness_cap": 25,
+    "initial_search_seed_glass_thickness_cap": 2,
+    "initial_search_adaptive_seed_thickness_caps": true,
+    "initial_search_seed_ttl_allow_short": true,
+    "initial_search_seed_ttl_max_factor": 1,
+    "initial_search_seed_material_nd_cap": 0.45,
+    "initial_search_seed_material_vd_cap": 50,
+    "initial_search_seed_pool_population_multiplier": 2,
+    "initial_search_basin_active_niche_elite_seed_count": 1,
+    "initial_search_basin_active_focus_elite_seed_count": 1,
+    "initial_search_funnel_global_micro_island_seed_scale": 0.65,
+    "initial_search_funnel_global_micro_island_family_seed_limit": 24,
+    "initial_search_funnel_global_micro_island_refresh_archive_seed_limit": 24,
+    "initial_search_funnel_global_explore_full_restart_shared_seed_pool": true,
+    "initial_search_funnel_global_explore_full_restart_seed_pool_multiplier": 1.0,
+    "initial_search_explore_develop_seed_stride": 10000,
+    "initial_search_restart_seed_topology_novelty": false,
+    "initial_search_restart_seed_topology_scan_limit": 0,
+    "initial_search_refresh_seed_pool_fraction": 0,
+    "initial_search_refresh_seed_pool_perturbation": 0,
+    "initial_search_funnel_stage_seed_trace_gate": true,
+    "initial_search_funnel_stage_seed_gate_candidate_factor": 8,
+    "initial_search_funnel_stage_seed_gate_batch_factor": 1,
+    "initial_search_funnel_stage_seed_gate_final_recheck": true,
+    "initial_search_seed_trace_strategy": "anchor_sparse_refill",
+    "initial_search_seed_cap_scout_enabled": true,
+    "initial_search_seed_cap_scout_list": "0.01,0.02,0.04",
+    "initial_search_seed_cap_scout_candidates": 6144,
+    "initial_search_checkpoint_optimizer_seed": 20261729,
+    "initial_search_checkpoint_population_seed": 2026072400,
+    "initial_search_de_dls_material_chromatic_repair_seed": 20260804,
+    "initial_search_de_dls_material_bridge_seed": 20260719,
+    "initial_search_de_dls_fixed_glass_feedback_seed": 20260704,
+    "initial_search_de_dls_fixed_glass_feedback_rng_seed": 104729,
+    "initial_search_post_asphere_seed": 20260709,
+    "initial_search_post_asphere_rng_seed": 104729,
+    "initial_search_post_asphere_sampling_seed": 1,
+    "initial_search_de_dls_fixed_glass_feedback_seed_policy": "stable_candidate_identity_v1",
+    "initial_search_seed_pool_target_count": 3150
+  },
+  "seed_profile_in_handoff": null,
+  "execution_evidence": "benchmarks/S1/execution_evidence.json",
+  "stage_graph": "benchmarks/S1/stage_graph.json",
+  "remaining_gaps": [
+    "short_iteration_equivalence_not_yet_executed",
+    "all_rng_calls_and_state_not_yet_traced",
+    "production_launcher_and_resource_relocation_pending",
+    "exact_nested_stage_graph_pending",
+    "dedicated_numeric_seed_profile_pending"
+  ],
+  "path_policy": "Saved absolute/source paths are provenance, not relocated runtime inputs; JSON fields have not been silently rewritten."
+}
